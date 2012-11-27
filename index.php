@@ -30,7 +30,8 @@
     <div id="impress">
 
         <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-            <q><center><span class="hello">Playbasis logo</span></center></q>
+            <!-- <q><center><span class="hello">Playbasis logo</span></center></q> -->
+            <?php include 'slide1.php';?>
         </div>
         
         <div class="step slide" data-x="0" data-y="-1500">
