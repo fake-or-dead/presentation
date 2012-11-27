@@ -10,22 +10,27 @@
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/joyride-2.0.2.css" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <body class="impress-not-supported">
+    <div id="playbasis_bar">
+        <div id="logo"></div>
+        <button class="btn btn-inverse pull-right start-here">login</button>
+    </div>
+    
     <div class="fallback-message">
-        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>Your browser <b>doesn't support the features required, so you are presented with a simplified version of this presentation.</p>
         <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
-    <div id="impress">
-        <h1>Hello bootstrap and impress.js</h1>
     
+    <div id="impress">
+
         <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-            <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+            <q><center><span class="hello">Playbasis logo</span></center></q>
         </div>
         
         <div class="step slide" data-x="0" data-y="-1500">
@@ -56,9 +61,45 @@
         </div>        
     </div>
     
+      <!-- Tip Content -->
+    <ol id="playbasisTour">
+      <li data-button="login">
+        <h2>Start Here</h2>
+        <p>You can start the demo here by login via facebook</p>
+      </li>
+      <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+        <h2>Stop #2</h2>
+        <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+      </li>
+      <li data-id="numero3" data-button="Next" data-options="tipLocation:right">
+        <h2>Stop #3</h2>
+        <p>It works right aligned.</p>
+      </li>
+      <li data-button="Next">
+        <h2>Stop #4</h2>
+        <p>It works as a modal too!</p>
+      </li>
+      <li data-id="numero5" data-button="Close">
+        <h2>Stop #5</h2>
+        <p>Now what are you waiting for? Add this to your projects and get the most out of your apps!</p>
+      </li>
+    </ol>    
     
-    <script src='js/impress.js'></script>
-    <script src='js/bootstrap.min.js'></script>
-    <script>impress().init();</script>
+    <script type="text/javascript" src='js/impress.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/modernizr.mq.js"></script>
+    <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>    
+    <script>
+        impress().init();
+        $(window).load(function() {
+            $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
+        });
+
+        function login() {
+
+        }
+    </script>
 </body>
 </html>
