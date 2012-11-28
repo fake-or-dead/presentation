@@ -162,14 +162,12 @@
         </div>
          -->
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-            <span class="try">then you should try</span>
-            <h1>impress.js<sup>*</sup></h1>
-            <span class="footnote"><sup>*</sup> no rhyme intended</span>
+            <h1>playbasis<sup>*</sup></h1>
         </div>
         <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-            <p>It's a <strong>presentation tool</strong> <br/>
-            inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-            and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+            <p>It's a <strong><a href="https://twitter.com/search?q=%23gamification&src=typd" target="_blank">#gamification</a> platform</strong> <br/>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
         <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
