@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,26 +35,42 @@
 
             // Additional initialization code such as adding Event Listeners goes here
             FB.getLoginStatus(function(response) {
+                console.log(response);
                 if (response.status === 'connected') {
-                // connected
-                    $('#login').hide();
-                    $('#logout').show();
+                    // connected
+                    $('#logout').addClass('active');
+                    $('#user').addClass('active');
+                    $('#login').removeClass('active');
 
                 } else {
-                    $('#login').show();
-                    $('#logout').hide();
+                    $('#logout').removeClass('active');
+                    $('#user').removeClass('active');                    
+                    $('#login').addClass('active');
                 }
             });
 
             FB.Event.subscribe('auth.statusChange', function(response){
                 if (response.status === 'connected') {
-                // connected
-                    $('#login').hide();
-                    $('#logout').show();
+                    // connected
+                    FB.api('/me', function(response) {
+                    // <img src=​"https:​/​/​graph.facebook.com/​1085130313/​picture" width=​"25px" height=​"25px">​
+                        $('#user')
+                            .append($('<img>').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
+                                                     'width': '25px',
+                                                     'height': '25px'
+                                                    }))
+                            .append($('<span>').html(response.name));
+                        console.log(response.name);
+                    });
+
+                    $('#login').toggleClass('active');
+                    $('#logout').toggleClass('active');
+                    $('#user').toggleClass('active');
 
                 } else {
-                    $('#login').show();
-                    $('#logout').hide();
+                    $('#login').toggleClass('active');
+                    $('#logout').toggleClass('active');
+                    $('#user').toggleClass('active');
                 }
             });
         };
@@ -75,9 +90,11 @@
 
     <div id="playbasis_bar">
         <div id="logo"></div>
+        <div class="pull-right">
             <div id="user"></div>
-        <button id="login" class="btn btn-inverse pull-right start-here">login</button>
-        <button id="logout" class="btn btn-inverse pull-right start-here">logout</button>
+            <button id="login" class="btn btn-inverse start-here">login</button>
+            <button id="logout" class="btn btn-inverse start-here">logout</button>    
+        </div>
     </div>
     
     <div class="fallback-message">
