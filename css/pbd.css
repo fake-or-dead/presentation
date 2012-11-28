@@ -1,5 +1,13 @@
 /*pbd.css*/
-
-	.trace,.trace *{outline: 1px solid red;}
-	.pbd_slide_wrapper{margin:-90px;}
 	.pbd_qoute{ font-size: .6em; font-weight: lighter;}
+	.pbd_slide_wrapper{ height: 100%; overflow: auto; }
+	.pbd_panel{width: 48%; float: left; margin-left: 12px;}
+
+	.pbd_topic_header{font-size: .9em; margin-top: 40px;}
+ 	.pbd_topic_content{font-size: .6em;line-height: 24px;}
+
+
+/*FIXED	*/
+	.pbd_fix_liftslide1{margin:-90px;}
+
+	
