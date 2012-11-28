@@ -33,9 +33,13 @@
 /*decor*/
 
 	.pbd_sample_context{ /*add shadow*/
+		margin: 2px
 		-webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.62);
 		-moz-box-shadow:    0px 0px 12px rgba(50, 50, 50, 0.62);
-		box-shadow:         0px 0px 12px rgba(50, 50, 50, 0.62);}
+		box-shadow:         0px 0px 12px rgba(50, 50, 50, 0.62);
+	}
+
+	.pbd_sample_context img{border: 1px solid #ddd;}
 
 
 

@@ -5,21 +5,32 @@
             .pbd_action_text{font-size: .4em}
             .pbd_context_content{position: relative; z-index: 1;}
             .pbd_context_action{position: relative; z-index: 2;}
+            .pbd_action_text{ border:1px solid orange;}
+
+            .pbd_context_demo{ font-size: .4em;}
+            .pbd_context_demo h1{ font-size: 1.8em;padding: 0px 4px;}
+            .pbd_context_demo span{margin-top: -100px;}
+            
+
+            #context_like_btn{margin-top: -135px;padding: 0px 24px;}
+            #context_share_btn{margin: -71px 15px 0px 0px;padding: 0px 24px;}
  		</style>
         
         <div class="pbd_right_panel pbd_panel">
         	<div class="pbd_img_contain" >
         		<ul class="pbd_sample_context_list">
         			<li>
-        				<div class='pbd_sample_context round' id='pbd_context_visit'>
+        				<div class='pbd_sample_context ' id='pbd_context_visit'>
         					<div class="pbd_context_content round"><img src="./img/img_reach_page_end.png" align="center"></div>
         					<div class="pbd_context_action context_button pbd_action_text">Reach bottom of the page</div>
         				</div>
         			</li> 
 
         			<li>
-        				<div class='pbd_sample_context round' id='pbd_context_like'>
-        					<div class="pbd_context_content round"></div>
+        				<div class='pbd_sample_context ' id='pbd_context_like'>
+        					<div class="pbd_context_content round">
+                                <div class="pbd_context_content round"><img src="./img/img_like_page.png" align="center"></div>
+                            </div>
         					<div class="pbd_context_action">
         						<input id="context_like_btn" class='context_button'  type='button' value='Like'/></input>
         					</div>
@@ -27,8 +38,10 @@
         			</li> 
 
         			<li>
-        				<div class='pbd_sample_context round' id='pbd_context_share'>
-        					<div class="pbd_context_content round"></div>
+        				<div class='pbd_sample_context ' id='pbd_context_share'>
+        					<div class="pbd_context_content round">
+                                <div class="pbd_context_content round"><img src="./img/img_share_page.png" align="center"></div>
+                            </div>
         					<div class="pbd_context_action">
         						<input id="context_share_btn" class='context_button'  type='button' value='share'/></input>
         					</div>
