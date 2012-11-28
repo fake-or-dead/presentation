@@ -14,6 +14,7 @@
     <link href="css/joyride-2.0.2.css" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/pbd.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -32,7 +33,7 @@
     <div id="impress">
 
         <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-            <q><center><span class="hello">Playbasis logo</span></center></q>
+            <?php include 'slide1.php';?>
         </div>
         
         <div id="sticky-bar" class="step slide" data-x="0" data-y="-1500">
