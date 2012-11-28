@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +22,80 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <body class="impress-not-supported">
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            // init the FB JS SDK
+            FB.init({
+              appId      : '500595709974073', // App ID from the App Dashboard
+              channelUrl : '//http://localhost/~Piya/presentation/channel.php', // Channel File for x-domain communication
+              status     : true, // check the login status upon init?
+              cookie     : true, // set sessions cookies to allow your server to access the session?
+              xfbml      : true  // parse XFBML tags on this page?
+            });
+
+            // Additional initialization code such as adding Event Listeners goes here
+            FB.getLoginStatus(function(response) {
+                console.log(response);
+                if (response.status === 'connected') {
+                    // connected
+                    $('#logout').addClass('active');
+                    $('#user').addClass('active');
+                    $('#login').removeClass('active');
+
+                } else {
+                    $('#logout').removeClass('active');
+                    $('#user').removeClass('active');                    
+                    $('#login').addClass('active');
+                }
+            });
+
+            FB.Event.subscribe('auth.statusChange', function(response){
+                if (response.status === 'connected') {
+                    // connected
+                    FB.api('/me', function(response) {
+                    // <img src=​"https:​/​/​graph.facebook.com/​1085130313/​picture" width=​"25px" height=​"25px">​
+                        $('#user')
+                            .append($('<img>').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
+                                                     'width': '25px',
+                                                     'height': '25px'
+                                                    }))
+                            .append($('<span>').html(response.name));
+                        console.log(response.name);
+                    });
+
+                    $('#login').toggleClass('active');
+                    $('#logout').toggleClass('active');
+                    $('#user').toggleClass('active');
+
+                } else {
+                    $('#login').toggleClass('active');
+                    $('#logout').toggleClass('active');
+                    $('#user').toggleClass('active');
+                }
+            });
+        };
+
+      // Load the SDK's source Asynchronously
+      // Note that the debug version is being actively developed and might 
+      // contain some type checks that are overly strict. 
+      // Please report such bugs using the bugs tool.
+      (function(d, debug){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document, /*debug*/ false));
+    </script>
+
     <div id="playbasis_bar">
         <div id="logo"></div>
-        <button class="btn btn-inverse pull-right start-here">login</button>
+        <div class="pull-right">
+            <div id="user"></div>
+            <button id="login" class="btn btn-inverse start-here">login</button>
+            <button id="logout" class="btn btn-inverse start-here">logout</button>    
+        </div>
     </div>
     
     <div class="fallback-message">
@@ -140,4 +212,5 @@
         }
     </script>
 </body>
+
 </html>

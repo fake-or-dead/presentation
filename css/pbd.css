@@ -1,6 +1,6 @@
 /*pbd.css*/
 /*sturcture*/
-	.pbd_qoute{ font-size: .6em; font-weight: lighter;}
+	.pbd_quote{ font-size: .6em; font-weight: lighter;}
 	.pbd_slide_wrapper{ height: 100%; overflow: auto; }
 	.pbd_panel{width: 48%; float: left; margin-left: 12px;}
 
@@ -47,6 +47,8 @@
 	.pbd_slide1{margin:-180px;}
 	.pbd_slide1 .hello{margin-top: -20px}
 
-	
+	#login, #logout, #user { display:none; }
+#login.active, #logout.active, #user.active { display:inline-block; }
+#user span { padding-left: 5px; color: white; }
 
 	
