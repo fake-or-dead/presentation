@@ -2,22 +2,24 @@
  	<div class="pbd_slide_wrapper trace">
         
  		<style type="text/css">
-
+            .pbd_action_text{font-size: .4em}
+            .pbd_context_content{position: relative; z-index: 1;}
+            .pbd_context_action{position: relative; z-index: 2;}
  		</style>
         
         <div class="pbd_right_panel pbd_panel">
         	<div class="pbd_img_contain" >
         		<ul class="pbd_sample_context_list">
         			<li>
-        				<div class='pbd_sample_context' id='pbd_context_visit'>
-        					<div class="pbd_context_content"></div>
-        					<div class="pbd_context_action"></div>
+        				<div class='pbd_sample_context round' id='pbd_context_visit'>
+        					<div class="pbd_context_content round"><img src="./img/img_reach_page_end.png" align="center"></div>
+        					<div class="pbd_context_action context_button pbd_action_text">Reach bottom of the page</div>
         				</div>
         			</li> 
 
         			<li>
-        				<div class='pbd_sample_context' id='pbd_context_like'>
-        					<div class="pbd_context_content"></div>
+        				<div class='pbd_sample_context round' id='pbd_context_like'>
+        					<div class="pbd_context_content round"></div>
         					<div class="pbd_context_action">
         						<input id="context_like_btn" class='context_button'  type='button' value='Like'/></input>
         					</div>
@@ -25,8 +27,8 @@
         			</li> 
 
         			<li>
-        				<div class='pbd_sample_context' id='pbd_context_share'>
-        					<div class="pbd_context_content"></div>
+        				<div class='pbd_sample_context round' id='pbd_context_share'>
+        					<div class="pbd_context_content round"></div>
         					<div class="pbd_context_action">
         						<input id="context_share_btn" class='context_button'  type='button' value='share'/></input>
         					</div>

@@ -2,13 +2,7 @@
  	<div class="pbd_slide_wrapper trace">
         
  		<style type="text/css">
- 			#img_wrap_slide2{
- 				background: #9DDAFA;
- 				width: 300px;
- 				height: 300px;
- 				overflow: hidden;
- 				margin:28% 0 0 10%;
- 			}
+ 			
 
  			#pbd_stream_ads_push_header,#pbd_stream_ads_push_detail{text-align: right;}
  		</style>
