@@ -38,14 +38,11 @@
                 console.log(response);
                 if (response.status === 'connected') {
                     // connected
-                    $('#logout').addClass('active');
-                    $('#user').addClass('active');
-                    $('#login').removeClass('active');
-
+                    $('.online').addClass('active');
+                    $('.offline').removeClass('active');
                 } else {
-                    $('#logout').removeClass('active');
-                    $('#user').removeClass('active');                    
-                    $('#login').addClass('active');
+                    $('.online').removeClass('active');
+                    $('.offline').addClass('active');
                 }
             });
 
@@ -54,23 +51,21 @@
                     // connected
                     FB.api('/me', function(response) {
                     // <img src=​"https:​/​/​graph.facebook.com/​1085130313/​picture" width=​"25px" height=​"25px">​
-                        $('#user')
-                            .append($('<img>').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
+                        $('#user img').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
                                                      'width': '25px',
                                                      'height': '25px'
-                                                    }))
-                            .append($('<span>').html(response.name));
+                                                    });
+
+                        $('#user span').html(response.name);
                         console.log(response.name);
                     });
 
-                    $('#login').toggleClass('active');
-                    $('#logout').toggleClass('active');
-                    $('#user').toggleClass('active');
+                    $('.online').toggleClass('active');
+                    $('.offline').toggleClass('active');
 
                 } else {
-                    $('#login').toggleClass('active');
-                    $('#logout').toggleClass('active');
-                    $('#user').toggleClass('active');
+                    $('.online').toggleClass('active');
+                    $('.offline').toggleClass('active');
                 }
             });
         };
@@ -89,12 +84,28 @@
     </script>
 
     <div id="playbasis_bar">
-        <div id="logo"></div>
-        <div class="pull-right">
-            <div id="user"></div>
-            <button id="login" class="btn btn-inverse start-here">login</button>
-            <button id="logout" class="btn btn-inverse start-here">logout</button>    
-        </div>
+    <ul class="pull-left">
+        <li class="logo"><div id="logo"></div></li>
+        <li class="progressbar">
+            <div class="level">
+                <span>Novice</span>
+            </div>
+            <div class="progress">
+                <div class="bar"></div>    
+            </div>
+        </li>
+    </ul>li
+        
+        <ul class="pull-right">
+            <li id="user" class="online">
+                <img src="" alt="" class="">
+                <span></span>
+            </li>
+            <li>
+                <button id="login" class="btn btn-inverse start-here offline">login</button>
+                <button id="logout" class="btn btn-inverse start-here online">logout</button> 
+            </li>   
+        </ul>
     </div>
     
     <div class="fallback-message">
@@ -134,6 +145,10 @@
         <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
             <p>and <b>tiny</b> ideas</p>
         </div>        
+    </div>
+    
+    <div id="footer">
+        
     </div>
     
       <!-- Tip Content -->
