@@ -14,14 +14,68 @@
     <link href="css/joyride-2.0.2.css" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/pbd.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <body class="impress-not-supported">
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            // init the FB JS SDK
+            FB.init({
+              appId      : '500595709974073', // App ID from the App Dashboard
+              channelUrl : '//http://localhost/~Piya/presentation/channel.php', // Channel File for x-domain communication
+              status     : true, // check the login status upon init?
+              cookie     : true, // set sessions cookies to allow your server to access the session?
+              xfbml      : true  // parse XFBML tags on this page?
+            });
+
+            // Additional initialization code such as adding Event Listeners goes here
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                // connected
+                    $('#login').hide();
+                    $('#logout').show();
+
+                } else {
+                    $('#login').show();
+                    $('#logout').hide();
+                }
+            });
+
+            FB.Event.subscribe('auth.statusChange', function(response){
+                if (response.status === 'connected') {
+                // connected
+                    $('#login').hide();
+                    $('#logout').show();
+
+                } else {
+                    $('#login').show();
+                    $('#logout').hide();
+                }
+            });
+        };
+
+      // Load the SDK's source Asynchronously
+      // Note that the debug version is being actively developed and might 
+      // contain some type checks that are overly strict. 
+      // Please report such bugs using the bugs tool.
+      (function(d, debug){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document, /*debug*/ false));
+    </script>
+
     <div id="playbasis_bar">
         <div id="logo"></div>
-        <button class="btn btn-inverse pull-right start-here">login</button>
+            <div id="user"></div>
+        <button id="login" class="btn btn-inverse pull-right start-here">login</button>
+        <button id="logout" class="btn btn-inverse pull-right start-here">logout</button>
     </div>
     
     <div class="fallback-message">
@@ -51,9 +105,13 @@
             <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
         </div>
         
+        <div class="step slide" data-x="2000" data-y="1500">
+            <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+        </div>
+        
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
             <span class="try">then you should try</span>
-            <h1>impress.js<sup>*</sup></h1>
+            <h1>playbasis<sup>*</sup></h1>
             <span class="footnote"><sup>*</sup> no rhyme intended</span>
         </div>
         <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
@@ -72,12 +130,12 @@
     </div>
     
       <!-- Tip Content -->
-    <ol id="playbasisTour">
+<!--    <ol id="playbasisTour">
       <li data-button="login">
         <h2>Start Here</h2>
         <p>You can start the demo here by login via facebook</p>
       </li>
-<!--       <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+       <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
         <h2>Stop #2</h2>
         <p>Get the details right by styling Joyride with a custom stylesheet!</p>
       </li>
@@ -96,7 +154,7 @@
     </ol>    
     
     <script type="text/javascript" src='js/impress.js'></script>
-    <script type="text/javascript" src='js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='js/bootstrap.js'></script>
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/modernizr.mq.js"></script>
@@ -104,9 +162,9 @@
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>
         impress().init();
-        $(window).load(function() {
-            $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
-        });
+        // $(window).load(function() {
+        //     $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
+        // });
 
         function login() {
 

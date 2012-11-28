@@ -2,4 +2,6 @@
 
 	.trace,.trace *{outline: 1px solid red;}
 	.pbd_slide_wrapper{margin:-90px;}
-	.pbd_qoute{ font-size: .6em; font-weight: lighter;}
+	.pbd_quote{ font-size: .6em; font-weight: lighter;}
+
+	#login, #logout { display:none; }
