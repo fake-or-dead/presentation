@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,7 @@
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/pbd.css" rel="stylesheet" />
+    <link href="css/pbd_common.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -86,27 +88,15 @@
     <div id="impress">
 
         <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-            <q><center><span class="hello">Playbasis logo</span></center></q>
+            <?php include 'slide1.php';?>
         </div>
         
         <div id="sticky-bar" class="step slide" data-x="0" data-y="-1500">
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span6"><span>Picture of Sticky bar</span></div>
-                    <div class="span6">
-                        <h1>Sticky bar description</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-                    </div>
-                </div>
-            </div>
+           <?php include 'slide2.php';?>
         </div>
 
-        <div class="step slide" data-x="1000" data-y="-1500">
-            <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
-        </div>
-        
-        <div class="step slide" data-x="2000" data-y="1500">
-            <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+        <div id="basic-action" class="step slide" data-x="1000" data-y="-1500">
+           <?php include 'slide3.php';?>
         </div>
         
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
