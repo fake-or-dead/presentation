@@ -45,10 +45,39 @@
            <?php include 'slide3.php';?>
         </div>
 
-        <div class="step slide" data-x="2000" data-y="-1500">
+        <div id="eccommerce-action" class="step slide" data-x="2000" data-y="-1500">
+           <?php include 'slide4.php';?>
+        </div>
+
+        <div id="content-action" class="step slide" data-x="3000" data-y="-1500">
+           <?php include 'slide5.php';?>
+        </div>
+
+        <div id="reward-system" class="step slide" data-x="4000" data-y="-1500">
+           <?php include 'slide6.php';?>
+        </div>
+
+        <div id="stream" class="step slide" data-x="5000" data-y="-1500">
+           <?php include 'slide7.php';?>
+        </div>
+
+        <div id="leader-board" class="step slide" data-x="6000" data-y="-1500">
+           <?php include 'slide8.php';?>
+        </div>
+
+        <div id="dashboard" class="step slide" data-x="7000" data-y="-1500">
+           <?php include 'slide9.php';?>
+        </div>
+
+        <div id="backend-system" class="step slide" data-x="8000" data-y="-1500">
+           <?php include 'slide10.php';?>
+        </div>
+
+
+       <!--  <div class="step slide" data-x="2000" data-y="-1500">
             <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
         </div>
-        
+         -->
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
             <span class="try">then you should try</span>
             <h1>impress.js<sup>*</sup></h1>
