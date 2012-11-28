@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,10 +127,43 @@
         <div id="basic-action" class="step slide" data-x="1000" data-y="-1500">
            <?php include 'slide3.php';?>
         </div>
-        
+
+        <div id="eccommerce-action" class="step slide" data-x="2000" data-y="-1500">
+           <?php include 'slide4.php';?>
+        </div>
+
+        <div id="content-action" class="step slide" data-x="3000" data-y="-1500">
+           <?php include 'slide5.php';?>
+        </div>
+
+        <div id="reward-system" class="step slide" data-x="4000" data-y="-1500">
+           <?php include 'slide6.php';?>
+        </div>
+
+        <div id="stream" class="step slide" data-x="5000" data-y="-1500">
+           <?php include 'slide7.php';?>
+        </div>
+
+        <div id="leader-board" class="step slide" data-x="6000" data-y="-1500">
+           <?php include 'slide8.php';?>
+        </div>
+
+        <div id="dashboard" class="step slide" data-x="7000" data-y="-1500">
+           <?php include 'slide9.php';?>
+        </div>
+
+        <div id="backend-system" class="step slide" data-x="8000" data-y="-1500">
+           <?php include 'slide10.php';?>
+        </div>
+
+
+       <!--  <div class="step slide" data-x="2000" data-y="-1500">
+            <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+        </div>
+         -->
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
             <span class="try">then you should try</span>
-            <h1>playbasis<sup>*</sup></h1>
+            <h1>impress.js<sup>*</sup></h1>
             <span class="footnote"><sup>*</sup> no rhyme intended</span>
         </div>
         <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
@@ -152,12 +186,12 @@
     </div>
     
       <!-- Tip Content -->
-<!--    <ol id="playbasisTour">
+    <ol id="playbasisTour">
       <li data-button="login">
         <h2>Start Here</h2>
         <p>You can start the demo here by login via facebook</p>
       </li>
-       <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+<!--       <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
         <h2>Stop #2</h2>
         <p>Get the details right by styling Joyride with a custom stylesheet!</p>
       </li>
@@ -176,7 +210,7 @@
     </ol>    
     
     <script type="text/javascript" src='js/impress.js'></script>
-    <script type="text/javascript" src='js/bootstrap.js'></script>
+    <script type="text/javascript" src='js/bootstrap.min.js'></script>
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/modernizr.mq.js"></script>
@@ -184,13 +218,14 @@
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>
         impress().init();
-        // $(window).load(function() {
-        //     $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
-        // });
+        $(window).load(function() {
+            $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
+        });
 
         function login() {
 
         }
     </script>
 </body>
+
 </html>

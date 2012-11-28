@@ -1,18 +1,51 @@
 /*pbd.css*/
-.pbd_qoute{ font-size: .6em; font-weight: lighter; }
-.pbd_slide_wrapper{ height: 100%; overflow: auto; }
-.pbd_panel{ width: 48%; float: left; margin-left: 12px; }
-.trace, .trace *{ outline: 1px solid red; }
-.pbd_slide_wrapper { margin:-90px; }
-.pbd_quote { font-size: .6em; font-weight: lighter; }
+/*sturcture*/
+	.pbd_quote{ font-size: .6em; font-weight: lighter;}
+	.pbd_slide_wrapper{ height: 100%; overflow: auto; }
+	.pbd_panel{width: 48%; float: left; margin-left: 12px;}
+
+	.pbd_topic_header{font-size: .9em; margin-top: 40px;}
+ 	.pbd_topic_content{font-size: .6em;line-height: 24px;}
 
 
-.pbd_topic_header { font-size: .9em; margin-top: 40px; }
-	.pbd_topic_content { font-size: .6em; line-height: 24px; }
+ 	/*SLIDE_5 ECOMMERCE INTEGRATION*/
+ 	.pbd_cover_panel .pbd_panel{margin-top:40px;}
+ 	.pbd_cover_panel .pbd_panel .pbd_topic_header{margin-top:0px;}
+
+
+ 	/*SLIDE_6 REWARD SYSTEM*/
+ 	.pbd_col_panel{width: 32%; float: left; margin: 0px 0px 0px 8px}
+	.pbd_context_col{width: 100%; height: 220px; overflow: hidden;}
+	.pbd_context_col_desc{margin-top: 20px; padding: 4px; font-size: .6em;line-height: 24px;}
+ 			
+
+
+
+ 	ul.pbd_sample_context_list {list-style-type: none; padding: 0px;margin-top: 30px;}
+	ul.pbd_sample_context_list li{margin:12px 0px 0px 0px;}
+		.pbd_sample_context{width: 300px; height: 180px;}
+		.pbd_context_content{width: 100%; height: 100%;  background:#62F57F;}
+		.context_button{font-weight: bold;  padding:4px 14px;  float: right; margin:-40px 8px 0px 12px; cursor: pointer;}
+		.pbd_cover_panel{ width: 100%; height: 49%; margin:2px 0px;}
+
+
+
+/*decor*/
+
+	.pbd_sample_context{ /*add shadow*/
+		margin: 2px
+		-webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.62);
+		-moz-box-shadow:    0px 0px 12px rgba(50, 50, 50, 0.62);
+		box-shadow:         0px 0px 12px rgba(50, 50, 50, 0.62);
+	}
+
+	.pbd_sample_context img{border: 1px solid #ddd;}
+
 
 
 /*FIXED	*/
-.pbd_fix_liftslide1 { margin:-90px; }
+	.pbd_slide1{margin:-180px;}
+	.pbd_slide1 .hello{margin-top: -20px}
 
 
 .active { display:inline-block; }

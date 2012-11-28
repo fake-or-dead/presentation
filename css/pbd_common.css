@@ -1,2 +1,52 @@
-.trace,.trace *{outline: 1px solid red;}
+.trace,.trace *{ 
+	/*outline:1px solid red;*/
+}
+
+
+.hide{
+	display: none;
+}
+
+.line{
+	border:1px solid #ccc;
+}
+
+.round{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;border-radius: 8px;
+}
+
+.mini-round{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;border-radius: 3px;
+}
+
+.round-top{
+		margin: 0px 0px 0px 0px;
+		-webkit-border-top-right-radius: 4px;
+		-moz-border-radius-topleft: 4px;
+		-moz-border-radius-topright: 4px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border:1px solid #ccc;
+}
+
+.round-bottom{
+	-webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.shadow{
+	-webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.62);
+	-moz-box-shadow:    0px 0px 12px rgba(50, 50, 50, 0.62);
+	box-shadow:         0px 0px 12px rgba(50, 50, 50, 0.62);
+}
+
+.clear{ clear:both;}
+
+
 	
