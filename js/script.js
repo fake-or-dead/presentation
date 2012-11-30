@@ -30,9 +30,12 @@ $(document).ready(function() {
 	}
 
 	pb.scrollspy = function() {
-		$('#impress div').on('impress:stepenter', function() { 
-			console.log( this.id ); 
+		var lastActivate;
+		$('#impress div div').on('impress:stepenter', function() { 
+			console.log(this.id);
+			$('#navbar li').removeClass('active');
+			$('#navbar a[href$="'+this.id+'"]').parent().addClass('active');
 		});
 	}
-
+	pb.scrollspy();
 });

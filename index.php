@@ -28,7 +28,7 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
-<body class="impress-not-supported" data-spy="scroll" data-target=".navbar">
+<body class="impress-not-supported">
     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function() {
@@ -116,7 +116,24 @@
             </li>   
         </ul>
     </div>
-    
+    <div id="footer">
+        <div id="navbar" class="navbar" style="margin:0 auto;">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li class="active"><a href="#playbasis">.</a></li>
+                    <li><a href="#sticky-bar">.</a></li>
+                    <li><a href="#basic-action">.</a></li>
+                    <li><a href="#eccommerce-action">.</a></li>
+                    <li><a href="#content-action">.</a></li>
+                    <li><a href="#reward-system">.</a></li>
+                    <li><a href="#stream">.</a></li>
+                    <li><a href="#leader-board">.</a></li>
+                    <li><a href="#dashboard">.</a></li>
+                    <li><a href="#backend-system">.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="fallback-message">
         <p>Your browser <b>doesn't support the features required, so you are presented with a simplified version of this presentation.</p>
         <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
@@ -124,7 +141,7 @@
     
     <div id="impress">
 
-        <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <div id="playbasis" class="step slide" data-x="-1000" data-y="-1500">
             <?php include 'slide1.php';?>
         </div>
         
@@ -164,11 +181,11 @@
            <?php include 'slide10.php';?>
         </div>
 
-
-       <!--  <div class="step slide" data-x="2000" data-y="-1500">
+<!--    <div class="step slide" data-x="2000" data-y="-1500">
             <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
-        </div>
-         -->
+        </div> -->
+       
+         
         <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
             <h1>playbasis<sup>*</sup></h1>
         </div>
@@ -185,25 +202,6 @@
         <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
             <p>and <b>tiny</b> ideas</p>
         </div>        
-    </div>
-    
-    <div id="footer">
-        <div id="navbar" class="navbar">
-            <div class="navbar-inner">
-                <ul class="nav">
-                    <li class="active"><a href="#bored">bored</a></li>
-                    <li><a href="#sticky-bar">sticky-bar</a></li>
-                    <li><a href="#basic-action">basic-action</a></li>
-                    <li><a href="#eccommerce-action">eccommerce-action</a></li>
-                    <li><a href="#content-action">content-action</a></li>
-                    <li><a href="#reward-system">reward-system</a></li>
-                    <li><a href="#stream">stream</a></li>
-                    <li><a href="#leader-board">leader-board</a></li>
-                    <li><a href="#dashboard">dashboard</a></li>
-                    <li><a href="#backend-system">backend-system</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
     
       <!-- Tip Content -->

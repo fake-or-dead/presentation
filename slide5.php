@@ -1,4 +1,4 @@
- 	<div class="pbd_slide_wrapper trace">ß
+ 	<div class="pbd_slide_wrapper trace">
         <div class="pbd_top_panel pbd_cover_panel">
 	        <div class="pbd_right_panel pbd_panel">
 	        	<div class='pbd_sample_context' id='pbd_context_visit'>
