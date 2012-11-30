@@ -6,7 +6,7 @@
  				/*background: #9DDAFA;*/
  				width: 300px;
  				height: 454px;
- 				overflow: hidden;pbd_action_image[0] = '';
+ 				overflow: hidden;/*pbd_action_image[0] = '';*/
  				margin:22% 0 0 10%;
  			}
 

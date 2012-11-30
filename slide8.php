@@ -10,12 +10,7 @@
        
 
         <div class="pbd_right_panel pbd_panel">
-        	<h1 class="pbd_topic_header">Leader board</h1>
-        	<div class="pbd_topic_content">
-        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        		  Ut enim ad minim veniam, quis nostrud exercitation
-        	</div>
+        	<?php include 'component_leaderboard.php';?>
         </div>
 
          <div class="pbd_left_panel pbd_panel">
