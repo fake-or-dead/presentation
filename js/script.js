@@ -21,4 +21,18 @@ $(document).ready(function() {
 	        }
     	});
 	});
+
+	window.pb = pb = {};
+	pb.getExp = function(percent) {
+		if( !String(percent).match('%') ) percent = percent + '%';
+		$('.bar').css('width', percent);
+		console.log('getExp');
+	}
+
+	pb.scrollspy = function() {
+		$('#impress div').on('impress:stepenter', function() { 
+			console.log( this.id ); 
+		});
+	}
+
 });

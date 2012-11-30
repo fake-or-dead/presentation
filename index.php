@@ -182,23 +182,29 @@
     <div id="footer">
         <div id="navbar" class="navbar">
             <div class="navbar-inner">
-                <a class="brand" href="#">Title</a>
                 <ul class="nav">
                     <li class="active"><a href="#bored">bored</a></li>
+                    <li><a href="#sticky-bar">sticky-bar</a></li>
+                    <li><a href="#basic-action">basic-action</a></li>
+                    <li><a href="#eccommerce-action">eccommerce-action</a></li>
+                    <li><a href="#content-action">content-action</a></li>
+                    <li><a href="#reward-system">reward-system</a></li>
                     <li><a href="#stream">stream</a></li>
+                    <li><a href="#leader-board">leader-board</a></li>
                     <li><a href="#dashboard">dashboard</a></li>
+                    <li><a href="#backend-system">backend-system</a></li>
                 </ul>
             </div>
         </div>
     </div>
     
       <!-- Tip Content -->
-    <ol id="playbasisTour">
+<!--    <ol id="playbasisTour">
       <li data-button="login">
         <h2>Start Here</h2>
         <p>You can start the demo here by login via facebook</p>
       </li>
-<!--       <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
+       <li data-id="numero2" data-button="Next" data-options="tipLocation:top;tipAnimation:fade">
         <h2>Stop #2</h2>
         <p>Get the details right by styling Joyride with a custom stylesheet!</p>
       </li>
@@ -213,8 +219,9 @@
       <li data-id="numero5" data-button="Close">
         <h2>Stop #5</h2>
         <p>Now what are you waiting for? Add this to your projects and get the most out of your apps!</p>
-      </li> -->
+      </li> 
     </ol>
+-->
     
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src='js/impress.js'></script>
@@ -225,7 +232,7 @@
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>
         impress().init();
-        $('#navbar').scrollspy()
+        // $('#navbar').scrollspy();
         // $(window).load(function() {
         //     $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
         // });
@@ -235,5 +242,4 @@
         }
     </script>
 </body>
-
 </html>
