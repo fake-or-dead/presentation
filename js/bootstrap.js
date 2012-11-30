@@ -20,7 +20,7 @@
 
 !function ($) {
 
-  "use strict"; // jshint ;_;
+  "use strict"; // jshint ;_;j
 
 
   /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)

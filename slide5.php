@@ -1,19 +1,9 @@
-<?php ?>
- 	<div class="pbd_slide_wrapper trace">
-        
- 		<style type="text/css">
- 			
- 		
- 			
- 		</style>
-        
-
-
+ 	<div class="pbd_slide_wrapper trace">ß
         <div class="pbd_top_panel pbd_cover_panel">
 	        <div class="pbd_right_panel pbd_panel">
 	        	<div class='pbd_sample_context' id='pbd_context_visit'>
 					<div class="pbd_context_content">
-						<iframe width="360" height="203" src="http://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen=""></iframe>
+						<iframe width="360" height="203" src="//www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen=""></iframe>
 					</div>
 					<div class="pbd_context_action"></div>
 				</div>

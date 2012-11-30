@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +20,7 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
-<body class="impress-not-supported">
+<body class="impress-not-supported" data-spy="scroll" data-target=".navbar">
     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function() {
@@ -41,7 +40,8 @@
                     // connected
                     $('.online').addClass('active');
                     $('.offline').removeClass('active');
-                } else {
+                } 
+                else {
                     $('.online').removeClass('active');
                     $('.offline').addClass('active');
                 }
@@ -51,7 +51,6 @@
                 if (response.status === 'connected') {
                     // connected
                     FB.api('/me', function(response) {
-                    // <img src=​"https:​/​/​graph.facebook.com/​1085130313/​picture" width=​"25px" height=​"25px">​
                         $('#user img').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
                                                      'width': '25px',
                                                      'height': '25px'
@@ -64,7 +63,8 @@
                     $('.online').toggleClass('active');
                     $('.offline').toggleClass('active');
 
-                } else {
+                } 
+                else {
                     $('.online').toggleClass('active');
                     $('.offline').toggleClass('active');
                 }
@@ -165,7 +165,7 @@
             <h1>playbasis<sup>*</sup></h1>
         </div>
         <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-            <p>It's a <strong><a href="https://twitter.com/search?q=%23gamification&src=typd" target="_blank">#gamification</a> platform</strong> <br/>
+            <p>It's a <strong><a href="//twitter.com/search?q=%23gamification&src=typd" target="_blank">#gamification</a> platform</strong> <br/>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
@@ -180,7 +180,16 @@
     </div>
     
     <div id="footer">
-        
+        <div id="navbar" class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Title</a>
+                <ul class="nav">
+                    <li class="active"><a href="#bored">bored</a></li>
+                    <li><a href="#stream">stream</a></li>
+                    <li><a href="#dashboard">dashboard</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     
       <!-- Tip Content -->
@@ -205,20 +214,21 @@
         <h2>Stop #5</h2>
         <p>Now what are you waiting for? Add this to your projects and get the most out of your apps!</p>
       </li> -->
-    </ol>    
+    </ol>
     
-    <script type="text/javascript" src='js/impress.js'></script>
-    <script type="text/javascript" src='js/bootstrap.min.js'></script>
     <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src='js/impress.js'></script>
+    <script type="text/javascript" src='js/bootstrap.js'></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/modernizr.mq.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>
         impress().init();
-        $(window).load(function() {
-            $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
-        });
+        $('#navbar').scrollspy()
+        // $(window).load(function() {
+        //     $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
+        // });
 
         function login() {
 
