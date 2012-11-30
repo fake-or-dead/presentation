@@ -1,4 +1,6 @@
 // SLIDE 6 .PHP
+
+
 	var cnt = 0;
 	var lock_path = './img/img_badges_blank.png';
 	
@@ -13,6 +15,8 @@
 		cnt++;
 		cnt%=3;	
 	})
+
+
 // END SLIDE 6 .PHP
 
 
@@ -150,3 +154,34 @@
 
 
 // END SLIDE 7 .PHP
+
+
+
+// SLIDE 8 .PHP
+    $(document).ready(function(){
+        $('.pbd_nav-tabs li').live('click',function(){
+
+            $('.pbd_nav-tabs li').removeClass('pbd_active');
+            $(this).addClass('pbd_active');
+
+            var classes = $(this).attr('class');
+
+            if(classes.indexOf('pbd_buddy') > -1){
+                // console.log('click on >> buddy');
+
+
+            }else if(classes.indexOf('pbd_weekly') > -1){
+                // console.log('click on >> weekly');
+
+
+            }if(classes.indexOf('pbd_global') > -1){
+                // console.log('click on >> global');
+
+
+            }
+
+
+        })
+    });
+
+// END SLIDE 8 .PHP

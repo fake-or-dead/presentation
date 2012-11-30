@@ -112,6 +112,7 @@ ul.pbd_unstyled li {
 -------------------*/
 
 .pbd_profile-cover, .pbd_recent-activity, .pbd_most-visited, .pbd_leaderboard, .pbd_live-notification {
+	margin-top: 70px;
 	display: block;
 	border: 1px solid #ddd;
 	background: #fff;

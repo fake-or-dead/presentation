@@ -1,12 +1,27 @@
 <div class="pbd_right-panel trace">
             
                 <div class="pbd_leaderboard">
-                    <h3><span>Leaderboard</span></h3>
+
+                <!-- <h3><span>Leaderboard</span></h3> -->
+                <!-- rokios -->
+                <style type="text/css">
+                    #pbd_context_gradient_h_leaderboard{background-color:rgb(24, 100, 213);border: 1px solid rgb(24, 100, 213); }
+                    #pbd_context_gradient_h_leaderboard .pbd_context_gradient_head_inner{text-align: left}
+                    .pbd_context_gradient_head_inner img{margin-top:0px;}
+                </style>
+                <div class="pbd_context_gradient_head  round-top " id='pbd_context_gradient_h_leaderboard'>
+                                <div class='pbd_context_gradient_head_inner mini-round' >
+                                    <img src='./img/img_notification.png' width='28' style='float:left'>
+                                    Leader board
+                                </div>
+                </div>
+        <!-- end rokios -->
+                
                     <div class="pbd_navigation">
                         <ul class="pbd_nav-tabs pbd_clearfix">
+                            <li class="pbd_active pbd_buddy"><a href="#">Buddy</a></li>
                             <li class="pbd_weekly"><a href="#">Weekly</a></li>
                             <li class="pbd_global"><a href="#">Global</a></li>
-                            <li class="pbd_active pbd_buddy"><a href="#">Buddy</a></li>
                         </ul>
                     </div>
                     <div class="pbd_the-content pbd_leaderboard-content">
