@@ -14,8 +14,16 @@
     <link href="css/joyride-2.0.2.css" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- rokios -->
     <link href="css/pbd.css" rel="stylesheet" />
     <link href="css/pbd_common.css" rel="stylesheet" />
+    <link href="css/pbd_component.css" rel="stylesheet" />
+    <link href="css/text.css" rel="stylesheet" />
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    
+        
+    <!-- end rokios -->
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -223,7 +231,14 @@
     </ol>
 -->
     
-    <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="js/jquery1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timeago.js"></script>
+    <script type="text/javascript" src="js/basic_operation.js"></script>
+    
+
     <script type="text/javascript" src='js/impress.js'></script>
     <script type="text/javascript" src='js/bootstrap.js'></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
