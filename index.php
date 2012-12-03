@@ -86,7 +86,7 @@
                 $('#comment_status').html('Thanks for your comment');
             });
         };
-
+ 
       // Load the SDK's source Asynchronously
       // Note that the debug version is being actively developed and might 
       // contain some type checks that are overly strict. 

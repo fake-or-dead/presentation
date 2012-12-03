@@ -56,6 +56,7 @@ $(document).ready(function() {
 
 	            rootTarget.append('<div class="notification bg-dark points-notify clearfix"><div class="points pull-left bg-orange"><div class="points-bg"><div class="notify-title">40</div><span class="small">Points</span></div></div><div class="points-notify-content"><a class="close"></a><h2>Congratulations!</h2><h4>You just earned The Badge points</h4></div></div>');
 	            $('.notification.points-notify').hide();
+	            rootTarget.appendTo($('body'));
 	        }
 	        //return false;
 	        target = $('.notification.points-notify');
@@ -168,4 +169,38 @@ function closeDialog(obj,time){
 $('.notification a.close').live('click',function(){
     $(this).closest('div.notification').slideUp(500);
     return false;
+});
+
+
+// Slide 3 Content Integration 
+$('#pbd_context_visit .context_button').on('click', function() { 
+  console.log('visit');
+  pb.showDialog('reward', {'type':'point', 'value': '10'})
+});
+
+$('#pbd_context_like .context_button').on('click', function() { 
+  console.log('like');
+  pb.showDialog('reward', {'type':'point', 'value': '15'})
+});
+
+$('#pbd_context_share .context_button').on('click', function() { 
+  console.log('share');
+  pb.showDialog('reward', {'type':'point', 'value': '20'})
+});
+
+
+// Slide 4 e-Commerce Integration 
+$('#pbd_context_checkin .context_button').on('click', function() { 
+  console.log('checkin');
+  pb.showDialog('reward', {'type':'point', 'value': '10'})
+});
+
+$('#pbd_context_want .context_button').on('click', function() { 
+  console.log('want');
+  pb.showDialog('reward', {'type':'point', 'value': '15'})
+});
+
+$('#pbd_context_buy .context_button').on('click', function() { 
+  console.log('buy');
+  pb.showDialog('reward', {'type':'point', 'value': '20'})
 });

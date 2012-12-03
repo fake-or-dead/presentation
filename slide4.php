@@ -9,7 +9,7 @@
         	<div class="pbd_img_contain" >
         		<ul class="pbd_sample_context_list">
         			<li>
-                        <div class='pbd_sample_context ' id='pbd_context_like'>
+                        <div class='pbd_sample_context ' id='pbd_context_checkin'>
                             <div class="pbd_context_content round">
                                 <div class="pbd_context_content round"><img src="./img/img_checkin_page.png" align="center"></div>
                             </div>
@@ -20,23 +20,23 @@
                     </li> 
 
         			<li>
-        				<div class='pbd_sample_context' id='pbd_context_like'>
+        				<div class='pbd_sample_context' id='pbd_context_want'>
         					<div class="pbd_context_content">
                                 <div class="pbd_context_content round"><img src="./img/img_want_product.png" align="center"></div>
                             </div>
         					<div class="pbd_context_action">
-        						<!-- <input id="context_like_btn" class='context_button'  type='button' value='Like'/></input> -->
+        						<input id="context_like_btn" class='context_button'  type='button' value='Want'/></input>
         					</div>
         				</div>
         			</li> 
 
         			<li>
-        				<div class='pbd_sample_context' id='pbd_context_share'>
+        				<div class='pbd_sample_context' id='pbd_context_buy'>
         					<div class="pbd_context_content">
                                 <div class="pbd_context_content round"><img src="./img/img_buy_product.png" align="center"></div>
                             </div>
         					<div class="pbd_context_action">
-        						<!-- <input id="context_share_btn" class='context_button'  type='button' value='share'/></input> -->
+        						<input id="context_share_btn" class='context_button'  type='button' value='Buy'/></input>
         					</div>
         				</div>
         			</li> 
