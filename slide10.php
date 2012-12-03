@@ -9,7 +9,7 @@
 	        	
 		<div class="pbd_right_panel pbd_col_panel">
 	        	<div class="pbd_context_col">
-	        		p
+	        		<img src='./img/img_ruleset.png'>
 	        	</div>
 	        	<div class="pbd_context_col_desc">
 	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -21,7 +21,7 @@
 
 	    <div class="pbd_right_panel pbd_col_panel">
 	        	<div class="pbd_context_col">
-	        		p
+	        		<img src='./img/img_badges_depend.png'>
 	        	</div>
 	        	<div class="pbd_context_col_desc">
 	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -33,7 +33,7 @@
 
 	    <div class="pbd_right_panel pbd_col_panel">
 	        	<div class="pbd_context_col">
-	        		p
+	        		<img src='./img/img_analytic.png'>
 	        	</div>
 	        	<div class="pbd_context_col_desc">
 	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
