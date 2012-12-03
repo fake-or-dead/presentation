@@ -1,0 +1,345 @@
+/*
+
+	Copyright 2012 @ zulazman.com
+	
+	DO NOT COPY or RE-DISTRIBUTE without written consent from:
+	- zuL azman (iam@zulazman.com).
+	
+	Theme Concept for: Playbasis
+	Theme Concept URL: http://playbasis.com
+
+	Author: zuL azman | iam@zulazman.com | zmnzul2@gmail.com
+	Author URL: http://www.zulazman.com | http://dribbble.com/zuLazman
+	
+*/
+
+/*--- IMPORT STUFF ---*/
+/*@import url('reset.css');*/
+/*@import url('text.css');*/
+/*--- END IMPORT STUFF ---*/
+
+
+/* Style starts here 
+----------------------------------------------------- */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+/* button */
+.btn-turq {
+	background: #33b2bf; /* Old browsers */
+	background: -moz-linear-gradient(top,  #33b2bf 0%, #009faf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#33b2bf), color-stop(100%,#009faf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #33b2bf 0%,#009faf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #33b2bf 0%,#009faf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #33b2bf 0%,#009faf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #33b2bf 0%,#009faf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33b2bf', endColorstr='#009faf',GradientType=0 ); /* IE6-8 */
+	color: #fff;
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3);
+	padding: 10px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.btn-turq:hover {
+	background: #33b2bf;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+/* Background */
+.bg-dark {
+	background: #3f3c3c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3f3c3c 0%, #231f20 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f3c3c), color-stop(100%,#231f20)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3f3c3c 0%,#231f20 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3f3c3c 0%,#231f20 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3f3c3c 0%,#231f20 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3f3c3c 0%,#231f20 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3c3c', endColorstr='#231f20',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-orange {
+	background: #e17a62; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e17a62 0%, #d85536 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e17a62), color-stop(100%,#d85536)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e17a62 0%,#d85536 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e17a62 0%,#d85536 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e17a62 0%,#d85536 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e17a62 0%,#d85536 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e17a62', endColorstr='#d85536',GradientType=0 ); /* IE6-9 */
+
+}
+
+.bg-turq {
+	background: #5fc3cc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5fc3cc 0%, #009faf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5fc3cc), color-stop(100%,#009faf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5fc3cc 0%,#009faf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5fc3cc 0%,#009faf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5fc3cc 0%,#009faf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5fc3cc 0%,#009faf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3cc', endColorstr='#009faf',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-sun {
+	background: #e57054; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e57054 0%, #dc241f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e57054), color-stop(100%,#dc241f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e57054 0%,#dc241f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e57054 0%,#dc241f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e57054 0%,#dc241f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e57054 0%,#dc241f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e57054', endColorstr='#dc241f',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* Notification
+-------------------*/
+/*.notification-container {
+	width: 565px;
+	margin: 25px auto;
+}*/
+
+#pb-root{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left:-230px;
+	margin-top: -100px;
+
+}
+a.close {
+	display: block;
+	width: 21px;
+	height: 21px;
+	background: url(../images/icon-notify.png) center -384px no-repeat;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	cursor: pointer;
+}
+
+.notification {
+	padding: 0;
+	font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	line-height: 20px;
+	color: #333;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;*/
+	margin-top: 30px;
+	margin-bottom: 30px; 
+	width: 565px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	overflow: hidden;
+	display: block;
+	-webkit-box-shadow: 4px 4px 12px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    4px 4px 12px rgba(50, 50, 50, 0.7);
+	box-shadow:         4px 4px 12px rgba(50, 50, 50, 0.7);
+}
+
+.notification .points, .notification .date {
+	text-align: center;
+	line-height: 1;
+}
+
+.notification .points .notify-title, .notification .date .notify-title {
+	font-size: 55px;
+	margin-bottom: 2px;
+	display: block;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.9);
+}
+
+.notification .points span.small, .notification .date span.small  {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+}
+
+.notification .date span.small {
+	font-size: 15px;
+}
+
+.notification .points-bg {
+	background: url(../images/notify-badge.png) center center no-repeat;
+	padding: 35px 20px 20px 20px;
+	width: 110px;
+	height: 85px;
+}
+
+.notification .points-bg-badge {
+	/*background: url(../images/notify-badge.png) center center no-repeat;*/
+	padding: 35px 20px 20px 20px;
+	width: 110px;
+	height: 85px;
+}
+.notification .points-bg-badge img{
+	width: 100px;
+	height: 100px;
+	margin: -15px;
+}
+
+.notification .event-bg {
+	background: #009FAF;
+	margin: 10px;
+	width: 105px;
+	height: 75px;
+	padding: 15px 0;
+}
+
+.notification .points-notify-content {
+	margin-left: 150px;
+	padding: 22px 20px 18px 20px;
+	height: 100px;
+	position: relative;
+}
+
+.notification .points-notify-content h2 {
+	display: block;
+	color: white;
+	background: url(../images/icon-notify.png) 0 0 no-repeat;
+	padding: 14px 14px 14px 42px;
+	font-size: 33px;
+	margin-bottom: 6px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.9);
+}
+
+.notification .points-notify-content h4 {
+	color: #fff;
+	font-size: 22px;
+	padding-left: 6px;
+	margin-bottom:  0;
+	font-weight: normal;
+	text-align: center;
+}
+
+.notification .event-notify-content {
+	margin-left: 125px;
+	padding: 22px 15px 15px 25px;
+	color: #fff;
+	position: relative;
+}
+
+.notification .event-notify-content h2 {
+	font-size: 23px;
+	margin-bottom: 12px;
+	font-weight: normal;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.9);
+}
+
+.notification .event-notify-content .time, .notification .event-notify-content .location {
+	background: url(../images/icon-notify.png) 0 0 no-repeat;
+	padding: 0px 12px 8px 28px;
+	font-size: 15px;
+}
+
+.notification .event-notify-content .time {
+	background-position: -10px -126px;
+}
+
+
+.notification .event-notify-content .location {
+	background-position: -10px -249px;
+}
+
+.notification .event-notify-action {
+	position: absolute;
+	display: block;
+	right: 25px;
+	top: 35px;
+}
+
+.notification .event-notify-action a {
+	display: block;
+	border-radius: 20px;
+	margin: 5px 0;
+	padding: 5px 15px;
+	width: 60px;
+	text-align: center;
+	box-shadow: 0 -1px 0 rgba(0,0,0,0.9);
+	font-size: 12px;
+	text-decoration: none;
+	/*color: #009FAF;*/
+}
+
+.notification.badge-notify {
+	background: #2D2D2D;
+	position: relative;
+}
+
+.badge-notify a.close {
+	top: 17px;
+	right: 18px;
+}
+
+.badge-notify .notify-title {
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.9);
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+
+.badge-notify .notify-title span {
+	border: 1px dashed rgba(255, 255, 255, 0.6);
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	display: block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 15px 10px;
+}
+
+.badge-notify-content {
+	padding: 20px;
+}
