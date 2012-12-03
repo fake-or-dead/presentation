@@ -84,6 +84,7 @@
             FB.Event.subscribe('comment.create', function(response) {
                 console.log(response);
                 $('#comment_status').html('Thanks for your comment');
+                pb.showDialog('reward', {'type':'point', 'value': '10'});
             });
         };
  

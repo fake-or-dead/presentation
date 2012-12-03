@@ -72,6 +72,7 @@
                             // alert("The video has finished!");
                             $('#youtube_status').html('you already watched it !!');
                             //Do something, example: play again
+                            pb.showDialog('reward', {'type':'point', 'value': '30'});
                             // player.playVideo();
                         }
                         if(event.data == "1") {
