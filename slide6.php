@@ -44,8 +44,8 @@
 	        			<img src="./img/img_level.png" id='pbd_context_demo_level_icon' title='level_icon' />
 	        			<div class='pbd_context_demo_level'>
 	        				<div>Level : 7</div>
-	        				<div class='pbd_context_demo_level_bar round'>
-	        					<div class='pbd_context_demo_level_bar_inner mini-round'></div>
+	        				<div class='pbd_context_demo_level_bar round progress'>
+	        					<div class='pbd_context_demo_level_bar_inner mini-round bar'></div>
 	        				</div>
 	        			</div>
 	        		</div>
@@ -118,11 +118,5 @@
 	        		  nisi ut aliquip ex ea commodo consequat.
 	        	</div>
 	    </div>
-
-        
-
-
-
-
 
     </div>

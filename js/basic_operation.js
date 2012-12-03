@@ -23,27 +23,27 @@
     })
 
     function oprt_fill_badges(){
-                var cnt=0;
-                var cntx = 0;
-                $('.pbd_context_demo_badges_shelf').children().each(function(){
-                    var object = $(this);
+        var cnt=0;
+        var cntx = 0;
+        $('.pbd_context_demo_badges_shelf').children().each(function(){
+            var object = $(this);
 
-                    var time = ++cnt*150;
-                    setTimeout(function(){ 
-                        console.log('item at >> '+time) 
-                        var classes = object.attr('class');
-                        if(classes.indexOf('pbd_locked') > -1){
-                            //$(this).attr('src',lock_path);
-                        }else{
-                            object.hide();
-                            object.attr('src','./img/img_badges'+cntx+'.png')
-                            object.show('fast');
-                        }
-                        cntx++;
-                        cntx%=3; 
-                    },time);
-                     
-                })
+            var time = ++cnt*150;
+            setTimeout(function(){ 
+                console.log('item at >> '+time) 
+                var classes = object.attr('class');
+                if(classes.indexOf('pbd_locked') > -1){
+                    //$(this).attr('src',lock_path);
+                }else{
+                    object.hide();
+                    object.attr('src','./img/img_badges'+cntx+'.png')
+                    object.show('fast');
+                }
+                cntx++;
+                cntx%=3; 
+            }, time);
+             
+        })
     }
 
 
@@ -57,6 +57,19 @@
 
     $(document).ready(function(){
 
+        $('.pbd_context_demo_level').on('hover', function(){
+            setTimeout(function() {
+                $('.pbd_context_demo_level_bar_inner.bar').css('width', '30%');
+            }, 2000);
+
+            setTimeout(function() {
+                $('.pbd_context_demo_level_bar_inner.bar').css('width', '60%');
+            }, 5000);
+
+            setTimeout(function() { 
+                $('.pbd_context_demo_level_bar_inner.bar').css('width', '80%');
+            }, 7000);
+        });
 
         $('.pbd_context_demo_badges_shelf').hover(function(){
             // console.log('hever me');
