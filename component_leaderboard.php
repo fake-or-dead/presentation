@@ -30,7 +30,7 @@
                             ul.tab_indicator_fit li {
                                 float: left;
                                 min-width: 92px;
-                                margin: 0 0 0 4px;
+                                margin: 0 0 2px 2px;
                                 cursor: pointer;
                                 line-height: 36px;
                                 background: #ddd;
