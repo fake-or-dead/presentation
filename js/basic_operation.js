@@ -159,29 +159,31 @@
 
 // SLIDE 8 .PHP
     $(document).ready(function(){
-        $('.pbd_nav-tabs li').live('click',function(){
+        
 
-            $('.pbd_nav-tabs li').removeClass('pbd_active');
-            $(this).addClass('pbd_active');
+        $('.tab_indicator_fit li').live('click',function(){
 
-            var classes = $(this).attr('class');
+            console.log('>> click');
 
-            if(classes.indexOf('pbd_buddy') > -1){
-                // console.log('click on >> buddy');
+            $('.tab_indicator_fit li').removeClass('pbd_r_active');
+            $(this).addClass('pbd_r_active');
 
-
-            }else if(classes.indexOf('pbd_weekly') > -1){
-                // console.log('click on >> weekly');
-
-
-            }if(classes.indexOf('pbd_global') > -1){
-                // console.log('click on >> global');
-
-
+            var id = $(this).attr('id');            
+            if(id=='buddy'){
+                $('.pbd_leader-list').html($('#pbd_buddy_modal_mock').clone());
+            }else if(id=='weekly'){
+                $('.pbd_leader-list').html($('#pbd_weekly_modal_mock').clone());
+            }else if(id=='global'){
+                $('.pbd_leader-list').html($('#pbd_global_modal_mock').clone());
             }
 
 
         })
+
+        // first time load 
+        $('.tab_indicator_fit li#buddy').trigger('click');
+
+
     });
 
 // END SLIDE 8 .PHP

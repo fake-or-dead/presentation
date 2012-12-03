@@ -410,7 +410,7 @@ ul.pbd_unstyled li {
 	margin-right: 0px;
 	line-height: 14px;
 	display: block;
-	background: url(../images/icon-tab.png) 0 0 no-repeat #f7f7f7;
+	/*background: url(../images/icon-tab.png) 0 0 no-repeat #f7f7f7;*/
 	color: #404041;
 }
 
@@ -442,7 +442,7 @@ ul.pbd_unstyled li {
 	text-decoration: none;
 }
 
-.pbd_nav-tabs > li.pbd_weekly > a { 
+/*.pbd_nav-tabs > li.pbd_weekly > a { 
 	background-position: 7px -42px;
 }
 
@@ -465,6 +465,38 @@ ul.pbd_unstyled li {
 .pbd_nav-tabs > li.pbd_buddy.pbd_active > a { 
 	background-position: 7px -186px;
 }
+*/
+
+
+
+/*.pbd_nav-tabs > li.pbd_weekly > a { 
+	background: url(../images/ico_leader_weekly.png) 0 0 no-repeat #f7f7f7;
+}
+
+.pbd_nav-tabs > li.pbd_weekly.pbd_r_active > a { 
+	background: url(../images/ico_leader_weekly.png) 0 0 no-repeat #f7f7f7;
+}
+
+.pbd_nav-tabs > li.pbd_global > a { 
+	background: url(../images/ico_leader_global.png) 0 0 no-repeat #f7f7f7;
+}
+
+.pbd_nav-tabs > li.pbd_global.pbd_r_active > a { 
+	background: url(../images/ico_leader_global.png) 0 0 no-repeat #f7f7f7;
+}
+
+.pbd_nav-tabs > li.pbd_buddy > a { 
+	background: url(../images/ico_leader_buddy.png) 0 0 no-repeat #f7f7f7;
+}
+
+.pbd_nav-tabs > li.pbd_buddy.pbd_r_active > a { 
+	background: url(../images/ico_leader_buddy.png) 0 0 no-repeat #f7f7f7;
+}
+*/
+
+
+
+
 
 
 /* button */
