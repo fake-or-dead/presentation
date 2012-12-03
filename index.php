@@ -202,11 +202,11 @@
         </div>
 
         <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-            <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+            <p>It makes all<b>big</b> <span class="thoughts">revenue</span></p>
         </div>
         
         <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-            <p>and <b>tiny</b> ideas</p>
+            <p>by <b>tiny</b> people</p>
         </div>        
     </div>
     
