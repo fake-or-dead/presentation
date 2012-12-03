@@ -3,113 +3,95 @@
       google.load("swfobject", "2.1");
     </script>    
     <script type="text/javascript">
-      /*
-       * Chromeless player has no controls.
-       */
-      
-      // Update a particular HTML element with a new value
-      function updateHTML(elmId, value) {
-        document.getElementById(elmId).innerHTML = value;
-      }
-      
-      // This function is called when an error is thrown by the player
-      function onPlayerError(errorCode) {
-        alert("An error occured of type:" + errorCode);
-      }
-      
-      // This function is called when the player changes state
-      function onPlayerStateChange(newState) {
-        // updateHTML("playerState", newState);
-        if(newState === 0)	alert('You watch all of these!!');
-        if(newState === 1) console.log('you are watching video. Great !!');
-      }
-      
-      // Display information about the current state of the player
-      function updatePlayerInfo() {
-        // Also check that at least one function exists since when IE unloads the
-        // page, it will destroy the SWF before clearing the interval.
-        if(ytplayer && ytplayer.getDuration) {
-        //   updateHTML("videoDuration", ytplayer.getDuration());
-        //   updateHTML("videoCurrentTime", ytplayer.getCurrentTime());
-        //   updateHTML("bytesTotal", ytplayer.getVideoBytesTotal());
-        //   updateHTML("startBytes", ytplayer.getVideoStartBytes());
-        //   updateHTML("bytesLoaded", ytplayer.getVideoBytesLoaded());
-        //   updateHTML("volume", ytplayer.getVolume());
+
+    function getFrameID(id) {
+        var elem = document.getElementById(id);
+        if (elem) {
+            if(/^iframe$/i.test(elem.tagName)) return id;//Frame, OK
+            // else: Look for frame
+            var elems = elem.getElementsByTagName("iframe");
+            if (!elems.length) return null; //No iframe found, FAILURE
+            for (var i=0; i<elems.length; i++) {
+               if (/^https?:\/\/(?:www\.)?youtube(?:-nocookie)?\.com(\/|$)/i.test(elems[i].src)) break;
+            }
+            elem = elems[i]; //The only, or the best iFrame
+            if (elem.id) return elem.id; //Existing ID, return it
+            // else: Create a new ID
+            do { //Keep postfixing `-frame` until the ID is unique
+                id += "-frame";
+            } while (document.getElementById(id));
+            elem.id = id;
+            return id;
         }
-      }
-      
-      // Allow the user to set the volume from 0-100
-      function setVideoVolume() {
-        var volume = parseInt(document.getElementById("volumeSetting").value);
-        if(isNaN(volume) || volume < 0 || volume > 100) {
-          alert("Please enter a valid volume between 0 and 100.");
+        // If no element, return null.
+        return null;
+    }
+
+    // Define YT_ready function.
+    var YT_ready = (function(){
+        var onReady_funcs = [], api_isReady = false;
+        /* @param func function     Function to execute on ready
+         * @param func Boolean      If true, all qeued functions are executed
+         * @param b_before Boolean  If true, the func will added to the first
+                                     position in the queue*/
+        return function(func, b_before){
+            if (func === true) {
+                api_isReady = true;
+                for (var i=0; i<onReady_funcs.length; i++){
+                    // Removes the first func from the array, and execute func
+                    onReady_funcs.shift()();
+                }
+            }
+            else if(typeof func == "function") {
+                if (api_isReady) func();
+                else onReady_funcs[b_before?"unshift":"push"](func); 
+            }
         }
-        else if(ytplayer){
-          ytplayer.setVolume(volume);
+    })();
+    // This function will be called when the API is fully loaded
+    function onYouTubePlayerAPIReady() { YT_ready(true) }
+
+    // Load YouTube Frame API
+    (function(){ //Closure, to not leak to the scope
+      var s = document.createElement("script");
+      s.src = "//www.youtube.com/player_api"; /* Load Player API*/
+      var before =document.getElementsByTagName("script")[0];
+      before.parentNode.insertBefore(s, before);
+    })();
+
+
+    var player;
+    YT_ready(function(){
+        var frameID = getFrameID("yt");
+        if (frameID) { //If the frame exists
+            player = new YT.Player(frameID, {
+                events: {
+                    "onStateChange": function(event){
+                        if(event.data == "0") {
+                            //The video has finished
+                            // alert("The video has finished!");
+                            $('#youtube_status').html('you already watched it !!');
+                            //Do something, example: play again
+                            // player.playVideo();
+                        }
+                        if(event.data == "1") {
+                          $('#youtube_status').html('is playing now ...');
+                          // console.log('video is playing');
+                        }                        
+                    }
+                }
+            });
         }
-      }
-      
-      function playVideo() {
-        if (ytplayer) {
-          ytplayer.playVideo();
-        }
-      }
-      
-      function pauseVideo() {
-        if (ytplayer) {
-          ytplayer.pauseVideo();
-        }
-      }
-      
-      function muteVideo() {
-        if(ytplayer) {
-          ytplayer.mute();
-        }
-      }
-      
-      function unMuteVideo() {
-        if(ytplayer) {
-          ytplayer.unMute();
-        }
-      }
-      
-      
-      // This function is automatically called by the player once it loads
-      function onYouTubePlayerReady(playerId) {
-        ytplayer = document.getElementById("ytPlayer");
-        // This causes the updatePlayerInfo function to be called every 250ms to
-        // get fresh data from the player
-        setInterval(updatePlayerInfo, 250);
-        updatePlayerInfo();
-        ytplayer.addEventListener("onStateChange", "onPlayerStateChange");
-        ytplayer.addEventListener("onError", "onPlayerError");
-        //Load an initial video into the player
-        ytplayer.cueVideoById("9bZkp7q19f0");
-      }
-      
-      // The "main method" of this sample. Called when someone clicks "Run".
-      function loadPlayer() {
-        // Lets Flash from another domain call JavaScript
-        var params = { allowScriptAccess: "always" };
-        // The element id of the Flash embed
-        var atts = { id: "ytPlayer" };
-        // All of the magic handled by SWFObject (http://code.google.com/p/swfobject/)
-        swfobject.embedSWF("//www.youtube.com/apiplayer?" +
-                           "version=3&enablejsapi=1&playerapiid=player1", 
-                           "videoDiv", "360", "203", "9", null, null, params, atts);
-      }
-      function _run() {
-        loadPlayer();
-      }
-      google.setOnLoadCallback(_run);
+    });
     </script>
  	 	<div class="pbd_slide_wrapper trace">
         <div class="pbd_top_panel pbd_cover_panel">
 	        <div class="pbd_right_panel pbd_panel">
 	        	<div class='pbd_sample_context' id='pbd_context_visit'>
 					<div class="pbd_context_content">
-						<div id="videoDiv">Laoding ...</div>
-						<!-- <iframe width="360" height="203" src="//www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen=""></iframe> -->
+						<!-- <div id="videoDiv">Laoding ...</div> -->
+						<!-- <iframe id="yt" width="360" height="203" src="//www.youtube.com/v/9bZkp7q19f0&enablejsapi=1" frameborder="0" allowfullscreen=""></iframe> -->
+						<iframe id="yt" width="360"height="203"frameborder="0"title="YouTube video player"type="text/html"src="http://www.youtube.com/embed/9bZkp7q19f0?enablejsapi=1"></iframe>
 					</div>
 					<div class="pbd_context_action"></div>
 				</div>
@@ -119,6 +101,7 @@
 	        <div class="pbd_left_panel pbd_panel">
 	        	
 	        	<h1 class="pbd_topic_header">Video Content Integration</h1>
+            <div id="youtube_status" class='pbd_topic_content'><strong>Please watch the video to get point ..</strong></div>  
 	        	<div class="pbd_topic_content">
 	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
