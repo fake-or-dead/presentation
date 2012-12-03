@@ -126,8 +126,12 @@
             </div>
           </div>
 
+          <style type="text/css">
+            #pbd_context_comment{overflow: auto; background: #fff;width: 380px;overflow-x: hidden;}          
+          </style>
+
           <div class="pbd_left_panel pbd_panel">
-            <div class='pbd_sample_context' id='pbd_context_visit'>
+            <div class='pbd_sample_context' id='pbd_context_comment'>
           <div class="pbd_context_content">
             <div class="fb-comments" data-href="//pbapp.net/demo" data-width="360" data-num-posts="2" data-colorscheme="dark"></div>
           </div>
