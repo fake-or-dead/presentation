@@ -102,18 +102,20 @@
     </script>
     <div id="pb-root"></div>
     <div id="playbasis_bar">
-    <ul class="pull-left">
-        <li class="logo"><div id="logo"></div></li>
-        <li class="progressbar">
-            <div class="level">
-                <span>Novice</span>
-            </div>
-            <div class="progress">
-                <div class="bar"></div>    
-            </div>
-        </li>
-    </ul>li
-        
+        <ul class="pull-left">
+            <li class="logo">
+                <div id="logo"></div>
+            </li>
+            <li class="progressbar online">
+                <div class="level">
+                    <span>Novice</span>
+                </div>
+                <div class="progress">
+                    <div class="bar"></div>    
+                </div>
+            </li>
+        </ul>
+            
         <ul class="pull-right">
             <li id="user" class="online">
                 <img src="" alt="" class="">

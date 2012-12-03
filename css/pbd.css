@@ -50,14 +50,19 @@
 
 .active { display:inline-block; }
 #playbasis_bar span { padding: 5px 5px; color: white; }
-#playbasis_bar li {display: inline; float: left;}
+#playbasis_bar li { float: left; display: inline;}
 #playbasis_bar .pull-left { width: 425px; }
 
-li.progressbar { display: inline; float:right;}
+li.progressbar { display: inline; float:right; line-height: 33px;}
 li.progressbar .progress { width:200px; height: 8px; margin-top: 13px; float: left;}
 li.progressbar .level { display:inline; height:35px; float: left; }
 li.progressbar .level span { padding: 5px 5px;}
+li.progressbar { visibility: hidden; }
+li.progressbar.active { visibility: visible; }
 
+#user { line-height: 33px; }
+#login, #logout, #user { display: none; }
+#login.active, #logout.active, #user.active { display: block; }
 #footer {position:fixed; bottom: 0px; background-color: red; height: 30px; width:100%;}
 
 
