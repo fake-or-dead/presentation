@@ -1,21 +1,49 @@
 // SLIDE 6 .PHP
 
 
-	var cnt = 0;
+	
 	var lock_path = './img/img_badges_blank.png';
 	
-	$('.pbd_context_demo_badges_shelf').children().each(function(){
-		var classes = $(this).attr('class');
-		if(classes.indexOf('pbd_locked') > -1){
-			$(this).attr('src',lock_path);
-		}else{
-			$(this).attr('src','./img/img_badges'+cnt+'.png');
-		}
+	// $('.pbd_context_demo_badges_shelf').children().each(function(){
+	// 	var classes = $(this).attr('class');
+	// 	if(classes.indexOf('pbd_locked') > -1){
+	// 		$(this).attr('src',lock_path);
+	// 	}else{
+	// 		$(this).attr('src','./img/img_badges'+cnt+'.png')
+	// 	}
 
-		cnt++;
-		cnt%=3;	
-	})
+	// 	cnt++;
+	// 	cnt%=3;	
+	// })
 
+    
+    $('.pbd_context_demo_badges_shelf').children().each(function(){
+        $(this).attr('src',lock_path);
+    })
+
+    function oprt_fill_badges(){
+                var cnt=0;
+                var cntx = 0;
+                $('.pbd_context_demo_badges_shelf').children().each(function(){
+                    var object = $(this);
+
+                    var time = ++cnt*1100;
+                    setTimeout(function(){ 
+                        console.log('item at >> '+time) 
+                        var classes = object.attr('class');
+                        if(classes.indexOf('pbd_locked') > -1){
+                            //$(this).attr('src',lock_path);
+                        }else{
+                            object.attr('src','./img/img_badges'+cntx+'.png')
+                        }
+                        cntx++;
+                        cntx%=3; 
+                    },time);
+                     
+                })
+    }
+
+    
 
 // END SLIDE 6 .PHP
 
@@ -181,7 +209,11 @@
         })
 
         // first time load 
-        $('.tab_indicator_fit li#buddy').trigger('click');
+        // $('.tab_indicator_fit li#buddy').trigger('click');
+            $('.tab_indicator_fit li').removeClass('pbd_r_active');
+            $('.tab_indicator_fit li#buddy').addClass('pbd_r_active');
+            $('.pbd_leader-list').html($('#pbd_buddy_modal_mock').clone());
+
 
 
     });
