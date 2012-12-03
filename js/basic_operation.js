@@ -4,6 +4,7 @@
 	
 	var lock_path = './img/img_badges_blank.png';
 	var adspush_selectedIndex = 2;
+    var badges_collection_filled = false;
 	// $('.pbd_context_demo_badges_shelf').children().each(function(){
 	// 	var classes = $(this).attr('class');
 	// 	if(classes.indexOf('pbd_locked') > -1){
@@ -27,7 +28,7 @@
                 $('.pbd_context_demo_badges_shelf').children().each(function(){
                     var object = $(this);
 
-                    var time = ++cnt*950;
+                    var time = ++cnt*150;
                     setTimeout(function(){ 
                         console.log('item at >> '+time) 
                         var classes = object.attr('class');
@@ -52,7 +53,21 @@
 
 
 
+
+
     $(document).ready(function(){
+
+
+        $('.pbd_context_demo_badges_shelf').hover(function(){
+            // console.log('hever me');
+
+            //hover to filled badges
+            if(!badges_collection_filled){
+                badges_collection_filled = true;
+                oprt_fill_badges();
+            }
+        })
+
 
         //Dropdown plugin data
         var ddData = [
