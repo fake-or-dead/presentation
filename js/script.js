@@ -23,12 +23,48 @@ $(document).ready(function() {
     });
 
     window.pb = pb = {};
-    pb.point = 0;
-    pb.setExp = function(percent) {
-        if( !String(percent).match('%') ) percent = percent + '%';
-        $('.bar').css('width', percent);
+    pb.point = 0, pb.level = 1;
+    pb.setExp = function(point) {
+        if(typeof point === 'number') pb.point += point;
+        if(typeof point === 'string') {
+            if( point.match('%') ) {
+                pb.point += parseInt(point.split('%')[0], 10);
+            }
+            else {
+                pb.point += parseInt(point, 10);
+            }
+        }
+
+        if(pb.point >= 100) {
+            pb.point -= 100;
+            $('.bar').css('width', "100%");
+            
+            setTimeout(function() {
+                pb.levelUp(pb.level + 1);
+                console.log(pb.point);
+                var progress = $('.bar').parent();
+                $(progress).remove('.bar').append($('.bar'));
+                $('.bar').css('width', "0%");
+            }, 500);
+
+            setTimeout(function() {
+                $('.bar').css('width', pb.point + "%");
+            }, 1000);
+        }
+        else {
+            $('.bar').css('width', pb.point + "%");
+        }
         console.log('setExp');
-        console.log(pb.point++);
+    }
+    pb.levelUp = function(level) {
+        console.log('levelUp');
+        var level_name="";
+        switch (level) {
+            case 1 : level_name = 'Novice'; break;
+            case 2 : level_name = 'Master'; break;
+            default : return;
+        }
+        $('.level span').html(level_name);    
     }
 
     pb.scrollspy = function() {

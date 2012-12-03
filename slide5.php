@@ -129,7 +129,7 @@
           <div class="pbd_left_panel pbd_panel">
             <div class='pbd_sample_context' id='pbd_context_visit'>
           <div class="pbd_context_content">
-            <div class="fb-comments" data-href="//pbapp.net/demo" data-width="360" data-num-posts="2" data-colorscheme="dark"></div>
+            <div class="fb-comments" data-href="//pbapp.net/demo" data-width="360" data-num-posts="1" data-colorscheme="dark"></div>
           </div>
           <div class="pbd_context_action"></div>
         </div>
