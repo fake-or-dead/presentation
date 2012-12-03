@@ -14,6 +14,8 @@
 
             #context_like_btn{margin-top: -135px;padding: 0px 24px;}
             #context_share_btn{margin: -71px 15px 0px 0px;padding: 0px 24px;}
+
+            #pbd_context_visit{overflow-x : hidden; overflow-y:scroll  }
  		</style>
         
         <div class="pbd_right_panel pbd_panel">
@@ -21,15 +23,15 @@
         		<ul class="pbd_sample_context_list">
         			<li>
         				<div class='pbd_sample_context ' id='pbd_context_visit'>
-        					<div class="pbd_context_content round"><img src="./img/img_reach_page_end.png" align="center"></div>
-        					<div class="pbd_context_action context_button pbd_action_text">Reach bottom of the page</div>
+        					<div class="pbd_context_content round"><img src="./img/page_playbasis.png" align="center"></div>
+        					<div class="pbd_context_action context_button pbd_action_text">Scroll Down This Page</div>
         				</div>
         			</li> 
 
         			<li>
         				<div class='pbd_sample_context ' id='pbd_context_like'>
         					<div class="pbd_context_content round">
-                                <div class="pbd_context_content round"><img src="./img/img_like_page.png" align="center"></div>
+                                <div class="pbd_context_content round"><img src="./img/img_like_page2.png" align="center"></div>
                             </div>
         					<div class="pbd_context_action">
         						<input id="context_like_btn" class='context_button'  type='button' value='Like'/></input>
@@ -40,7 +42,7 @@
         			<li>
         				<div class='pbd_sample_context ' id='pbd_context_share'>
         					<div class="pbd_context_content round">
-                                <div class="pbd_context_content round"><img src="./img/img_share_page.png" align="center"></div>
+                                <div class="pbd_context_content round"><img src="./img/img_share_page2.png" align="center"></div>
                             </div>
         					<div class="pbd_context_action">
         						<input id="context_share_btn" class='context_button'  type='button' value='share'/></input>
