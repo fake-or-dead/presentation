@@ -78,6 +78,11 @@
                     $('.offline').toggleClass('active');
                 }
             });
+
+            FB.Event.subscribe('comment.create', function(response) {
+                console.log(response);
+                $('#comment_status').html('Thanks for your comment');
+            });
         };
 
       // Load the SDK's source Asynchronously
