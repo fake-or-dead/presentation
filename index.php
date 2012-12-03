@@ -14,7 +14,8 @@
     <link href="css/joyride-2.0.2.css" rel="stylesheet" />
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="css/dialog.css" rel="stylesheet" />
+    
     <!-- rokios -->
     <link href="css/pbd.css" rel="stylesheet" />
     <link href="css/pbd_common.css" rel="stylesheet" />
@@ -98,7 +99,7 @@
          ref.parentNode.insertBefore(js, ref);
        }(document, /*debug*/ false));
     </script>
-
+    <div id="pb-root"></div>
     <div id="playbasis_bar">
     <ul class="pull-left">
         <li class="logo"><div id="logo"></div></li>
