@@ -3,7 +3,7 @@
 
 	
 	var lock_path = './img/img_badges_blank.png';
-	
+	var adspush_selectedIndex = 2;
 	// $('.pbd_context_demo_badges_shelf').children().each(function(){
 	// 	var classes = $(this).attr('class');
 	// 	if(classes.indexOf('pbd_locked') > -1){
@@ -27,14 +27,16 @@
                 $('.pbd_context_demo_badges_shelf').children().each(function(){
                     var object = $(this);
 
-                    var time = ++cnt*1100;
+                    var time = ++cnt*950;
                     setTimeout(function(){ 
                         console.log('item at >> '+time) 
                         var classes = object.attr('class');
                         if(classes.indexOf('pbd_locked') > -1){
                             //$(this).attr('src',lock_path);
                         }else{
+                            object.hide();
                             object.attr('src','./img/img_badges'+cntx+'.png')
+                            object.show('fast');
                         }
                         cntx++;
                         cntx%=3; 
@@ -43,7 +45,53 @@
                 })
     }
 
-    
+
+    function oprt_reload_exp(target){
+        //
+    }
+
+
+
+    $(document).ready(function(){
+
+        //Dropdown plugin data
+        var ddData = [
+            {
+                text: "Ensogo",
+                value: 1,
+                selected: false,
+                description: "Ensogo Ads. description here.",
+                imageSrc: "./img/logo_ensogo.png"
+            },
+            {
+                text: "What's new",
+                value: 2,
+                selected: false,
+                description: "What's new Ads. description here.",
+                imageSrc: "./img/logo_whatsnew.png"
+            },
+            {
+                text: "Oishi",
+                value: 3,
+                selected: true,
+                description: "Oishi Ads. description here.",
+                imageSrc: "./img/logo_oishi.png"
+            }
+        ];
+
+
+        $('#demoBasic').ddslick({
+            data: ddData,
+            width: 300,
+            imagePosition: "left",
+            selectText: "Select your favorite social network",
+            onSelected: function (data) {
+                console.log(data.selectedIndex);
+                adspush_selectedIndex = data.selectedIndex;
+            }
+        });
+    })
+
 
 // END SLIDE 6 .PHP
 
@@ -119,6 +167,13 @@
 
 
 
+           
+
+
+        })
+
+
+
             function setUpFeedObject(){
                  
                     var rand_index = Math.floor((Math.random()*5)+1)-1;
@@ -142,8 +197,32 @@
 
             function pushFeed(object){
                 console.log('Push Feed');
+                console.log(object);
                 object.hide().prependTo('.tabhost_noti_stream').slideDown("fast");
             }
+
+
+
+
+            function forgeStreamAdsItem(img,name,message,link){
+                    var object = $('#noti_stream_ads_item_modal').clone();
+                    object.attr('id','');
+                        var timestamp = new Date().getTime();
+                        object.find('.noti_stream_item_time_ago').attr('title',timestamp);
+                        object.find('.noti_stream_item_time_ago').html('just now');
+
+                    object.find('.noti_stream_item_name h4').html(name);
+                    object.find('.noti_stream_item_info').html(message);
+                    object.find('.topic_img').attr('src',img);
+                    
+
+                    object.find('.noti_stream_item_action_info a').html(link);
+                    object.find('.noti_stream_item_badge').css('visibility','invisible');
+
+                    return object;                
+            }
+
+
 
 
             function forgeStreamListItem(img,name,act,badge){
@@ -166,22 +245,48 @@
             }
 
             $('#pbd_stream_ads_push_btn').click(function(){
-                        
+                        //if message and link != blank
+                        var img = '';
+                        var name = '';
+                        var link = '';
+                        var message = $('#pbd_stream_ads_message').val();//'test';
 
-                        var img = $('#pbd_stream_ads_user_img').val();
-                        if(img=='')return;
-                        var name = $('#pbd_stream_ads_username').val();
-                        var act_text = $('#pbd_stream_ads_action').val();
-                        var act_img = $('#pbd_stream_ads_badges_img').val();
+                        switch(adspush_selectedIndex){
+                            case 0 : img = './img/logo_ensogo.png';
+                             name = 'Ensogo';
+                             link = 'playth.is/asdf';
+                             break;
+                            case 1 : img = './img/logo_whatsnew.png'; 
+                             name = "What's new";
+                             link = 'playth.is/hjkl';
+                             break;
+                            case 2 : img = './img/logo_oishi.png'; 
+                             name = 'Oishi';
+                             link = 'playth.is/qwert';
+                             break;
+                            default: return;
+                        }
 
-                        pushFeed(forgeStreamListItem(img,name,act_text,act_img));
+
+                    
+                    pushFeed(forgeStreamAdsItem(img,name,message,link));                  
+
+
+                        // var img = $('#pbd_stream_ads_user_img').val();
+                        // if(img=='')return;
+                        // var name = $('#pbd_stream_ads_username').val();
+                        // var act_text = $('#pbd_stream_ads_action').val();
+                        // var act_img = $('#pbd_stream_ads_badges_img').val();
+
+                        // pushFeed(forgeStreamListItem(img,name,act_text,act_img));
             })
 
 
-        })
-
-
 // END SLIDE 7 .PHP
+
+
+
+
 
 
 
