@@ -59,6 +59,8 @@
             <h1 class="pbd_topic_header">Ecommerce Integration</h1>
             <div class="pbd_topic_content">
                 <ul class='pbd_topic_content_ulx'>
+                  
+
                     <li>
                         <h4>Check-ins </h4>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;GEncourage your users to return to your website more often by allowing them to get credit for broadcasting their activity and rewarding their loyalty.</p>

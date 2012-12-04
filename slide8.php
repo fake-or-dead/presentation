@@ -14,9 +14,13 @@
         </div>
 
          <div class="pbd_left_panel pbd_panel">
-        	<div class="pbd_img_contain" id='img_wrap_slide2'>
-        		<img src='#' width='300' height='300'  align='center'/>
-        	</div>
+        	<h1 class="pbd_topic_header" style='margin-top: 70px;'>Leaderboards</h1>
+            <div class="pbd_topic_content" style='margin-left:12px;font-size: .5em;'>
+            	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Leaderboards are a great way to indentify your most valuable users. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friendly competition inspires bursts of activity, and top users feel a sense of pride knowing they have reached the top of the community. 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+You can easily create weekly or monthly contests and provide your users with a fresh challenge each time. 
+            </div>
         </div>
 
 

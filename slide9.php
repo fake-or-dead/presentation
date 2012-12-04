@@ -38,11 +38,9 @@
 
 	        <div class="pbd_left_panel pbd_panel" id ='pbd_left_panel_dashboard'>
 	        	
-	        	<h1 class="pbd_topic_header">Dash Board</h1>
-	        	<div class="pbd_topic_content">
-	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-	        		  Ut enim ad minim veniam, quis nostrud exercitation
+	        	<h1 class="pbd_topic_header">Player Profile</h1>
+	        	<div class="pbd_topic_content" style='margin-left: 16px;'>
+	        		&nbsp;&nbsp;&nbsp;&nbsp;Player Profile pages is a user dashboard which they can visit daily to track their progress. <br/>&nbsp;&nbsp;&nbsp;&nbsp;They serve as a hub where users can view all their achievements, check their standings in the <em class='pbd_em'>Leaderboards</em>, send <em class='pbd_em'>friend invites</em> and requests, view <em class='pbd_em'>Badge collections</em>, and review the points and prizes they've earned.
 	        	</div>
 	        </div>
 	    </div>
@@ -53,8 +51,8 @@
 	        
 			<div class="pbd_right_panel pbd_panel " id='pbd_right_panel_socialized'>
 	        	
-	        	<h1 class="pbd_topic_header">Socialized</h1>
-	        	<div class="pbd_topic_content">
+	        	<h1 class="pbd_topic_header">Socialized,Friends</h1>
+	        	<div class="pbd_topic_content red hide">
 	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 	        		  Ut enim ad minim veniam, quis nostrud exercitation

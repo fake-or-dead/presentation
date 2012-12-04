@@ -101,12 +101,10 @@
 
           <div class="pbd_left_panel pbd_panel">
             
-            <h1 class="pbd_topic_header">Video Content Integration</h1>
-            <div id="youtube_status" class='pbd_topic_content'><strong>Please watch the video to get point ..</strong></div>  
+            <h1 class="pbd_topic_header">Custom Actions</h1>
+            <div style='display:none' id="youtube_status" class='pbd_topic_content'><strong>Please watch the video to get point ..</strong></div>  
             <div class="pbd_topic_content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you have a website where users can take special actions such as uploading music, bookmarking interesting content, completing quizzes, or making purchases, you can reward them for completing these high-value actions.
             </div>
           </div>
       </div>
@@ -117,9 +115,9 @@
           
       <div class="pbd_right_panel pbd_panel ">
             
-            <h1 class="pbd_topic_header">Comments Integration</h1>
-              <div id="comment_status" class="pbd_topic_content">Please leave your comment ;)</div>
-            <div class="pbd_topic_content">
+            <h1 class="pbd_topic_header">Social Comments Integration</h1>
+              <div style='display:none'  id="comment_status" class="pbd_topic_content">Please leave your comment ;)</div>
+            <div class="pbd_topic_content" style='display:none'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation
@@ -127,7 +125,14 @@
           </div>
 
           <style type="text/css">
-            #pbd_context_comment{overflow: auto; background: #fff;width: 380px;overflow-x: hidden;}          
+            #pbd_context_comment{
+              overflow: auto;
+              background: #fff;
+              width: 380px;
+              height: 330px;
+              overflow-x: hidden;
+              margin-top: -70px;
+            }          
           </style>
 
           <div class="pbd_left_panel pbd_panel">

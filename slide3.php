@@ -63,18 +63,28 @@
              <h1 class="pbd_topic_header">Content Integration</h1>
             <div class="pbd_topic_content">
                 <ul class='pbd_topic_content_ulx'>
+<!-- 
                     <li>
                         <h4>Page Visit </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        <p class='red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation</p>
                     </li>
                     <li>
                         <h4>Page ,Product Like </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        <p class='red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </li> -->
+
+                    <li>
+                        <h4> Basic Actions</h4>
+                        <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incentivize and reward users for interacting with your website as they normally do; things like viewing pages, leaving comments, and watching videos. 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+By applying a point system across your website, your users have the opportunity to level up with your brand.</p>
                     </li>
+                    
+                    
                     <li>
                         <h4> Social Sharing</h4>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;Go beyond simply waiting for users to share your content to their social networks, and actually reward and incentivize these valuable behaviors in order to improve viral growth and organic marketing.</p>

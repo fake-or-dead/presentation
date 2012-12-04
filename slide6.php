@@ -37,7 +37,7 @@
 	        	<div class="pbd_context_col">
 	        		<div class="pbd_context_gradient_head  round-top " id='pbd_context_gradient_h_level'>
 	        			<div class='pbd_context_gradient_head_inner mini-round' >
-	        				Level
+	        				EXP System
 	        			</div>
 	        		</div>
 	        		<div class="pbd_context_col_box_body shadow">
@@ -51,10 +51,9 @@
 	        		</div>
 	        	</div>
 	        	<div class="pbd_context_col_desc">
-	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-	        		  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-	        		  nisi ut aliquip ex ea commodo consequat.
+	        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incentivize and reward users for <em class='pbd_em'>interacting with your website</em> as they normally do; things like viewing pages, leaving comments, and watching videos. 
+	        		<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+By applying a point system across your website, your users have the opportunity <em class='pbd_em'>to level up</em> with your brand.
 	        	</div>
 	    </div>
 
@@ -62,7 +61,7 @@
 	        	<div class="pbd_context_col">
 	        		<div class=" pbd_context_gradient_head  round-top" id='pbd_context_gradient_h_badges'>
 	        			<div class='pbd_context_gradient_head_inner mini-round'>
-	        				Badges
+	        				Badge Collections
 	        			</div>
 	        		</div>
 	        		<div class="pbd_context_col_box_body shadow ">
@@ -88,11 +87,10 @@
 	        			</div>
 	        		</div>
 	        	</div>
-	        	<div class="pbd_context_col_desc">
-	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-	        		  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-	        		  nisi ut aliquip ex ea commodo consequat.
+	        	<div class="pbd_context_col_desc" style='border-left: 1px solid #ccc;'>
+	        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Badges represent fun and interesting accomplishments users have made within your website. Badges are fun to show off and even more fun to unlock/collect. 
+	        		<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Badges can be grouped as collections, they can be released as seasonal content, and they can also be custom-branded.
 	        	</div>
 	    </div>
 
@@ -100,7 +98,7 @@
 	        	<div class="pbd_context_col">
 	        		<div class=" pbd_context_gradient_head  round-top" id='pbd_context_gradient_h_other'>
 	        			<div class='pbd_context_gradient_head_inner mini-round'>
-	        				Others
+	        				Virtual Currency Reward
 	        			</div>
 	        		</div>
 	        		<div class="pbd_context_col_box_body shadow ">
@@ -111,11 +109,9 @@
 	        			</div>
 	        		</div>
 	        	</div>
-	        	<div class="pbd_context_col_desc">
-	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-	        		  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-	        		  nisi ut aliquip ex ea commodo consequat.
+	        	<div class="pbd_context_col_desc" style='border-left: 1px solid #ccc;'>
+	        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        		While EXP represents the depth of a user's interaction with your brand, Virtual Currency serve as monetary rewards which your users can redeem for gifts and prizes - things like coupons, discounts, vouchers, and gift cards.
 	        	</div>
 	    </div>
 

@@ -24,12 +24,11 @@
         </div>
 
         <div class="pbd_left_panel pbd_panel">
-            <br/>
-            <h1 class="pbd_topic_header">Stream</h1>
-            <div class="pbd_topic_content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
+            <h1 class="pbd_topic_header" style='margin-top: 12px;'>Real-time Activity Stream</h1>
+            <div class="pbd_topic_content" style='margin-left:12px;font-size: .5em;'>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are living in the stream economy - is your business prepared? Activity streams create a sense of recency and make a wesbite more sticky. Just take Facebook and Twitter as examples. 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Implement your own activity stream into your website and highlight user activity in a fun and engaging way.
             </div>
 
         </div>
@@ -38,8 +37,12 @@
             <script type="text/javascript">
 
             </script>
-            <h1 class="pbd_topic_header" id='pbd_stream_ads_push_header'>Ads. Push</h1>
+            <h1 class="pbd_topic_header" id='pbd_stream_ads_push_header'>Stream Annoucements</h1>
+                <div class="pbd_topic_content" style='margin-left:12px;font-size: .5em;padding-bottom: 4px;'>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Brands can insert <em class='pbd_em'>promotional messages</em> directly into the Real-time Activity Stream, encouraging users to remain active on the site in order to receive these special notifications.
 
+            </div>
                 <div class="demon" style='font-size:.76em; float:right'>
                     <div id="demoBasic"></div>
                 </div>

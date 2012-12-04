@@ -1,6 +1,10 @@
 .trace,.trace *{ 
-	outline:1px solid red;
+	/*outline:1px solid red;*/
 }
+
+.red {color:red;}
+.pbd_em{color: #14a3db; text-decoration: none}
+
 
 
 .hide{
