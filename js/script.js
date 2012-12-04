@@ -76,12 +76,7 @@ $(document).ready(function() {
 
             if(!pb.page[this.id]) { 
                 pb.page[this.id] = true;
-                var exp = 0;
-                for( page in pb.page ) {
-                    exp += 10;
-                }
-                pb.setExp(10)
-                // $('#playbasis_bar .bar').css('width', exp+'%');
+                pb.setExp(12)
             }
         });
     }
