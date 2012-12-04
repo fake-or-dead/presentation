@@ -26,7 +26,7 @@
  			.pbd_context_demo_badges{width: 48px; height: 48px; margin: 12px 0px 0px 12px; float: left}
 
  			/*other reward*/
- 			.pbd_context_demo_reward_wrapper{padding: 60px 0px 0px 28px;}
+ 			.pbd_context_demo_reward_wrapper{padding: 46px 0px 0px 28px;}
  			.pbd_context_demo_reward{width: 48px; height: 48px; margin: 12px 0px 0px 12px; float: left}
 
  		</style>
@@ -103,9 +103,10 @@ Badges can be grouped as collections, they can be released as seasonal content, 
 	        		</div>
 	        		<div class="pbd_context_col_box_body shadow ">
 	        			<div class='pbd_context_demo_reward_wrapper'>
-	        				<img src="" class='pbd_context_demo_reward'/>
-	        				<img src="" class='pbd_context_demo_reward'/>
-	        				<img src="" class='pbd_context_demo_reward'/>
+	        				<img src="./img/img_other0.png" class='pbd_context_demo_reward'/>
+	        				<img src="./img/img_other1.png" class='pbd_context_demo_reward'/>
+	        				<img src="./img/img_other2.png" class='pbd_context_demo_reward'/>
+	        				
 	        			</div>
 	        		</div>
 	        	</div>
