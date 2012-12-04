@@ -1,7 +1,7 @@
 /*pbd.css*/
 /*sturcture*/
 	.pbd_quote{ font-size: .6em; font-weight: lighter;}
-	.pbd_slide_wrapper{ height: 100%; overflow: auto; }
+	.pbd_slide_wrapper{ height: 100%; }
 	.pbd_panel{width: 48%; float: left; margin-left: 12px;}
 
 	.pbd_topic_header{font-size: .9em; margin-top: 40px;}
