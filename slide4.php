@@ -3,6 +3,13 @@
         
  		<style type="text/css">
             #pbd_context_checkin_btn{margin-top: -40px;/*padding: 0px 24px;*/}
+            .pbd_context_want_btn,.pbd_context_buy_btn{background: none;
+                                    border: none;
+                                    border: 2px solid rgba(204, 255, 0, 0.64);;
+                                    margin: -105px 138px 0px 0px;
+                                    padding: 0px 24px;
+                                    color: rgba(255, 255, 255, 0);}
+            .pbd_context_buy_btn{margin: -80px 10px 0px 0px;border: 2px solid rgba(204, 255, 0, 0.64);padding: 0px 19px;}
         </style>
         
         <div class="pbd_right_panel pbd_panel">
@@ -25,7 +32,7 @@
                                 <div class="pbd_context_content round"><img src="./img/img_want_product.png" align="center"></div>
                             </div>
         					<div class="pbd_context_action">
-        						<input id="" class='context_button pbd_content'  type='button' value='Want'/></input>
+        						<input id="" class='context_button pbd_context_want_btn mini-round'  type='button' value='Want'/></input>
         					</div>
         				</div>
         			</li> 
@@ -36,7 +43,7 @@
                                 <div class="pbd_context_content round"><img src="./img/img_buy_product.png" align="center"></div>
                             </div>
         					<div class="pbd_context_action">
-        						<input id="" class='context_button'  type='button' value='Buy'/></input>
+        						<input id="" class='context_button pbd_context_buy_btn mini-round'  type='button' value='Buy'/></input>
         					</div>
         				</div>
         			</li> 
