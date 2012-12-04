@@ -92,7 +92,7 @@
           <div class="pbd_context_content">
             <!-- <div id="videoDiv">Laoding ...</div> -->
             <!-- <iframe id="yt" width="360" height="203" src="//www.youtube.com/v/9bZkp7q19f0&enablejsapi=1" frameborder="0" allowfullscreen=""></iframe> -->
-            <iframe id="yt" width="360"height="203"frameborder="0"title="YouTube video player"type="text/html"src="http://www.youtube.com/embed/9bZkp7q19f0?enablejsapi=1"></iframe>
+            <iframe id="yt" width="360"height="203"frameborder="0"title="YouTube video player"type="text/html"src="https://www.youtube.com/embed/9bZkp7q19f0?enablejsapi=1"></iframe>
           </div>
           <div class="pbd_context_action"></div>
         </div>
