@@ -142,7 +142,7 @@
                         <li><a href="#stream"></a></li>
                         <li><a href="#leader-board"></a></li>
                         <li><a href="#dashboard"></a></li>
-                        <li><a href="#backend-system"></a></li>
+                        <!-- <li><a href="#backend-system"></a></li> -->
                     </ul>
                 </div>
             </div>
@@ -193,29 +193,7 @@
 
         <!-- <div id="backend-system" class="step slide" data-x="8000" data-y="-1500">
            <?php include 'slide10.php';?>
-        </div> -->
-
-<!--    <div class="step slide" data-x="2000" data-y="-1500">
-            <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
-        </div> -->
-       
-         
-        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-            <h1>playbasis<sup>*</sup></h1>
-        </div>
-        <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-            <p>It's a <strong><a href="//twitter.com/search?q=%23gamification&src=typd" target="_blank">#gamification</a> platform</strong> <br/>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-            <p>It makes all<b>big</b> <span class="thoughts">revenue</span></p>
-        </div>
-        
-        <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-            <p>by <b>tiny</b> people</p>
-        </div>        
+        </div> -->      
     </div>
     
       <!-- Tip Content -->
