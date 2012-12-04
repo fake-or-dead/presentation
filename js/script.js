@@ -256,7 +256,7 @@ $('#pbd_context_buy .context_button').on('click', function() {
 pb.blinkblink('#pbd_context_visit > .pbd_action_text');
 pb.blinkblink('#context_like_btn');
 pb.blinkblink('#context_share_btn');
-pb.blinkblink('.pbd_context_checkin_btn');
+pb.blinkblink('#pbd_context_checkin_btn');
 pb.blinkblink('.pbd_context_want_btn');
 pb.blinkblink('.pbd_context_buy_btn');
 

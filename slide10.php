@@ -40,11 +40,4 @@ Badges can be grouped as collections, they can be released as seasonal content, 
 Badges can be grouped as collections, they can be released as seasonal content, and they can also be custom-branded.
 	        	</div>
 	    </div>
-
-        
-
-
-
-
-
     </div>

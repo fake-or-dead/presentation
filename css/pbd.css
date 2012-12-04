@@ -76,6 +76,13 @@ li.progressbar.active { visibility: visible; }
     background-color: black;
     /*top:40px;*/
 }
+.fallback-message {
+	display: none;
+}
+/*#playbasis_bar #user img { 
+	width: 25px;
+	height: 25px;
+}*/
 
 #logo {
     width: 114px;

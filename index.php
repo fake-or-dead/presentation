@@ -6,30 +6,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>playbasis demo</title>
     
-    <meta name="author" content="Bartek Szopka" />
-
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     
-    <link href="css/joyride-2.0.2.css" rel="stylesheet" />
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/dialog.css" rel="stylesheet" />
-    
-    <!-- rokios -->
-    <link href="css/pbd.css" rel="stylesheet" />
-    <link href="css/pbd_common.css" rel="stylesheet" />
-    <link href="css/pbd_component.css" rel="stylesheet" />
-    <link href="css/tools_generated_css.css" rel="stylesheet" />
-    <link href="css/text.css" rel="stylesheet" />
-    <link href="css/zulazman.css" rel="stylesheet" />
-    <link href="css/nav.css" rel="stylesheet" />
-    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
-    
-        
-    <!-- end rokios -->
-    
+    <link rel="stylesheet" type="text/css" href="css/joyride-2.0.2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/impress-demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+    <link rel="stylesheet" type="text/css" href="css/pbd.css" />
+    <link rel="stylesheet" type="text/css" href="css/pbd_common.css" />
+    <link rel="stylesheet" type="text/css" href="css/pbd_component.css" />
+    <link rel="stylesheet" type="text/css" href="css/tools_generated_css.css" />
+    <link rel="stylesheet" type="text/css" href="css/text.css" />
+    <link rel="stylesheet" type="text/css" href="css/zulazman.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+
     <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <body class="impress-not-supported">
     <div id="fb-root"></div>
@@ -48,7 +40,15 @@
             FB.getLoginStatus(function(response) {
                 console.log(response);
                 if (response.status === 'connected') {
-                    // connected
+                    FB.api('/me', function(response) {
+                        $('#user img').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
+                                             'width': '25px',
+                                             'height': '25px'
+                                            });
+
+                        $('#user span').html(response.name); 
+                    });
+
                     $('.online').addClass('active');
                     $('.offline').removeClass('active');
                 } 
@@ -60,20 +60,8 @@
 
             FB.Event.subscribe('auth.statusChange', function(response){
                 if (response.status === 'connected') {
-                    // connected
-                    FB.api('/me', function(response) {
-                        $('#user img').attr({'src': '//graph.facebook.com/​'+response.id+'/picture',
-                                                     'width': '25px',
-                                                     'height': '25px'
-                                                    });
-
-                        $('#user span').html(response.name);
-                        console.log(response.name);
-                    });
-
                     $('.online').toggleClass('active');
                     $('.offline').toggleClass('active');
-
                 } 
                 else {
                     $('.online').toggleClass('active');
@@ -128,10 +116,10 @@
         </ul>
     </div>
     <div id="footer">
-        <div id="navbar" class="navbar" style="margin:0 auto;">
+        <div id="navbar" class="navbar">
             <div class="navbar-inner">
                 <div class="center">
-                    <ul class="nav" style='margin-bottom: 130px;'>
+                    <ul class="nav">
                         <li class="active"><a href="#playbasis"></a></li>
                         <li><a href="#sticky-bar"></a></li>
                         <li><a href="#basic-action"></a></li>
