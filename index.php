@@ -213,15 +213,14 @@
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.timeago.js"></script>
-    <script type="text/javascript" src="js/basic_operation.js"></script>
     <script type="text/javascript" src="js/jquery.ddslick.min.js"></script>    
-    
+    <script type="text/javascript" src="js/jquery.animate-shadow.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
 
     <script type="text/javascript" src='js/impress.js'></script>
     <script type="text/javascript" src='js/bootstrap.js'></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/modernizr.mq.js"></script>
-    <script type="text/javascript" src="js/jquery.animate-shadow.js"></script>
+    <script type="text/javascript" src="js/basic_operation.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>
