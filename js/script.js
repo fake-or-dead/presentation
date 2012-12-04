@@ -42,7 +42,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 pb.levelUp(pb.level + 1);
                 console.log(pb.point);
-                var progress = $('.bar').parent();
+                var progress = $('#playbasis_bar .bar').parent();
                 $(progress).remove('#playbasis_bar .bar').append($('#playbasis_bar .bar'));
                 $('#playbasis_bar .bar').css('width', "0%");
             }, 500);
@@ -209,27 +209,19 @@ $(document).ready(function() {
         target.slideDown(500,'swing', closeDialog(target,5000));
         return false
     }
-});
 
-
-//close dialog callback
-function closeDialog(obj,time){
-    var timer;
-    if(timer){
-        clearTimeout(timer);
+    pb.blinkblink = function(elem, /* box-shadow config*/ config) {
+        if(!config) {
+            $(elem).css('box-shadow', 'rgb(0, 0, 0) 0px 0px 10px 0px');
+        }
+        else {
+            $(elem).css('box-shadow', config);
+        }
+        
+        setInterval(function() {
+            $(elem).stop().animate({boxShadow: '0 0 30px #44f'}).animate({boxShadow: '0 0 10px #000'}) 
+        }, 2000);
     }
-    
-    timer = setTimeout(function(){
-            $(obj).slideUp(500);
-    },time)
-    return false;
-}
-
-//close button listener
-$('.notification a.close').live('click',function(){
-    $(this).closest('div.notification').slideUp(500);
-    return false;
-});
 
 
 // Slide 3 Content Integration 
@@ -264,3 +256,34 @@ $('#pbd_context_buy .context_button').on('click', function() {
   console.log('buy');
   pb.showDialog('reward', {'type':'point', 'value': '20'});
 });
+
+// blink blink zone
+pb.blinkblink('#pbd_context_visit > .pbd_action_text');
+pb.blinkblink('#context_like_btn');
+pb.blinkblink('#context_share_btn');
+pb.blinkblink('.pbd_context_checkin_btn');
+pb.blinkblink('.pbd_context_want_btn');
+pb.blinkblink('.pbd_context_buy_btn');
+
+});
+
+
+//close dialog callback
+function closeDialog(obj,time){
+    var timer;
+    if(timer){
+        clearTimeout(timer);
+    }
+    
+    timer = setTimeout(function(){
+            $(obj).slideUp(500);
+    },time)
+    return false;
+}
+
+//close button listener
+$('.notification a.close').live('click',function(){
+    $(this).closest('div.notification').slideUp(500);
+    return false;
+});
+

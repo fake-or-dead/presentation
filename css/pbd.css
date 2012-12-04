@@ -84,3 +84,15 @@ li.progressbar.active { visibility: visible; }
     background-size:114px 35px;
     display: inline-block;
 }
+
+.shadow {
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+ transition: all 0.4s ease-in-out;
+ 
+
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px#888;
+	box-shadow: 0 0 5px 5px #888;
+}
