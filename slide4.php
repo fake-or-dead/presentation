@@ -55,12 +55,28 @@
 
         <div class="pbd_left_panel pbd_panel">
         	
-        	<h1 class="pbd_topic_header">Ecommerce Integration</h1>
+
+            <h1 class="pbd_topic_header">Ecommerce Integration</h1>
+            <div class="pbd_topic_content">
+                <ul class='pbd_topic_content_ulx'>
+                    <li>
+                        <h4>Check-ins </h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;GEncourage your users to return to your website more often by allowing them to get credit for broadcasting their activity and rewarding their loyalty.</p>
+                    </li>
+                    
+                    <li>
+                        <h4>Social CRM</h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Capture and access valuable user account data, and gain a deeper insight into your users.</p>
+                    </li>
+                </ul>
+            </div>
+
+        	<!-- <h1 class="pbd_topic_header">Ecommerce Integration</h1>
         	<div class="pbd_topic_content">
         		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         		  Ut enim ad minim veniam, quis nostrud exercitation
-        	</div>
+        	</div> -->
         	<!-- <h1 class="pbd_topic_header">Ecommerce Integration</h1>
         	<div class="pbd_topic_content">
         		Loremอipsum dolor sit amet, consectetur adipisicing elit,

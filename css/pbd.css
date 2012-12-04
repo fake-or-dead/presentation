@@ -5,7 +5,7 @@
 	.pbd_panel{width: 48%; float: left; margin-left: 12px;}
 
 	.pbd_topic_header{font-size: .9em; margin-top: 40px;}
- 	.pbd_topic_content{font-size: .6em;line-height: 24px;}
+ 	.pbd_topic_content{font-size: .6em;line-height: 24px; margin-top: -20px;}
 
 
  	/*SLIDE_5 ECOMMERCE INTEGRATION*/
@@ -84,3 +84,11 @@ li.progressbar.active { visibility: visible; }
     background-size:114px 35px;
     display: inline-block;
 }
+
+
+
+/*4.12.2012*/
+.pbd_topic_content_ulx{ list-style-type: none; padding-left: 24px;}
+.pbd_topic_content_ulx li {margin-top:32px;}
+.pbd_topic_content_ulx li h4{text-decoration: underline;}
+.pbd_topic_content_ulx li p{margin-top: -16px;margin-left: 12px;}
