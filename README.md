@@ -1,5 +1,3 @@
-playbasis demo site
+playbasis presentation
 
-fake-or-dead มาเยือน
-
-rokios -> test push
+to describe our platform 

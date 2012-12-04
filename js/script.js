@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     window.pb = pb = {};
-    pb.point = 0, pb.level = 1;
+    pb.point = 0, pb.level = 1, pb.page = [];
     pb.setExp = function(point) {
         if(typeof point === 'number') pb.point += point;
         if(typeof point === 'string') {
@@ -68,11 +68,13 @@ $(document).ready(function() {
     }
 
     pb.scrollspy = function() {
-        var lastActivate;
+        var lastActivate = [];
         $('#impress div div').on('impress:stepenter', function() { 
             console.log(this.id);
             $('#navbar li').removeClass('active');
             $('#navbar a[href$="'+this.id+'"]').parent().addClass('active');
+
+            pb.page[this.id] = true;
         });
     }
     pb.scrollspy();
