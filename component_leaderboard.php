@@ -114,18 +114,35 @@
                         $runner = rand ( 0 , 4 );
                         $counter = 0;
 
+                            $picx = array(
+                                './img/friends_01.jpg',
+                                './img/friends_02.jpg',
+                                './img/friends_03.jpg',
+                                './img/friends_04.jpg',
+                                './img/friends_05.jpg'
+                                );
+                            $namex = array(
+                                'Siritra &nbsp;&nbsp;&nbsp;&nbsp;Differ',
+                                'PM &nbsp;&nbsp;&nbsp;&nbsp;Master',
+                                'Rob &nbsp;&nbsp;&nbsp;&nbsp;Zepeda',
+                                'Gus &nbsp;&nbsp;&nbsp;&nbsp;tsu',
+                                'Nupang&nbsp;&nbsp;&nbsp;&nbsp; Poko'
+                                );
+
+
                         while($counter++<5){
-                            $num = $runner
-
+                            $num = ($runner++ % 5);
+                            
+                            
                             ?>
-
+                        
                             <li>
                                 <div class="pbd_left-col">
                                     <div class="pbd_user-avatar pbd_pull-left">
-                                        <img src="./img/friends_05.jpg">
+                                        <img src="<?php echo $picx[$num];?>">
                                     </div>
                                     <div class="pbd_user-content">
-                                        <div class="pbd_user-name"><a href="#">John Appleseed(<?php echo $name;?>)</a></div>
+                                        <div class="pbd_user-name"><a href="#"> <?php echo $namex[$num];?></a></div>
                                         <div class="pbd_user-rating pbd_clearfix">
                                             <span class="pbd_like"><a href="#">10</a></span>
                                             <span class="pbd_star"><a href="#">10</a></span>
