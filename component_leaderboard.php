@@ -110,11 +110,19 @@
 
             <?php 
                 function mockx($name=''){
-                        for ($i=0; $i < 10 ; $i++) { ?>
+
+                        $runner = rand ( 0 , 4 );
+                        $counter = 0;
+
+                        while($counter++<5){
+                            $num = $runner
+
+                            ?>
+
                             <li>
                                 <div class="pbd_left-col">
                                     <div class="pbd_user-avatar pbd_pull-left">
-                                        <img src="images/avatar.png">
+                                        <img src="./img/friends_05.jpg">
                                     </div>
                                     <div class="pbd_user-content">
                                         <div class="pbd_user-name"><a href="#">John Appleseed(<?php echo $name;?>)</a></div>
@@ -131,6 +139,10 @@
 
                                 <div class="pbd_clear"></div>
                             </li>
-                            <?php }//END FOR
+
+                            <?php
+                        }//end while
+
+                        
                 }
             ?>
