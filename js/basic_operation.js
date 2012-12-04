@@ -1,3 +1,42 @@
+// SLIDE 3.php
+    $(document).ready(function(){
+        
+
+        $('#pbd_context_visit').scroll(function(){ 
+          if(isScrollBottom()){ 
+            //scroll is at the bottom 
+            //do something... 
+            // console.log(' >>  >>  >>  >>  >>  >> ');
+             console.log('visit');
+            pb.showDialog('reward', {'type':'point', 'value': '10'});
+          } 
+        }); 
+
+        function isScrollBottom() { 
+          var elementHeight = $('#pbd_context_visit img').height(); 
+          console.log('elementHeight >> '+elementHeight);
+          var scrollPosition = $('#pbd_context_visit').height() + $('#pbd_context_visit').scrollTop(); 
+          console.log('scrollPosition >> '+scrollPosition);
+          return (elementHeight == scrollPosition-2); 
+        }
+
+    })
+
+// END SLIDE 6.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // SLIDE 6 .PHP
 
 
