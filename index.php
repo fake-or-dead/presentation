@@ -39,7 +39,7 @@
             // init the FB JS SDK
             FB.init({
               appId      : '500595709974073', // App ID from the App Dashboard
-              channelUrl : '//http://localhost/~Piya/presentation/channel.php', // Channel File for x-domain communication
+              channelUrl : location.origin + location.pathname + 'channel.php', // Channel File for x-domain communication
               status     : true, // check the login status upon init?
               cookie     : true, // set sessions cookies to allow your server to access the session?
               xfbml      : true  // parse XFBML tags on this page?
