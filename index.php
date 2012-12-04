@@ -191,9 +191,9 @@
            <?php include 'slide9.php';?>
         </div>
 
-        <div id="backend-system" class="step slide" data-x="8000" data-y="-1500">
+        <!-- <div id="backend-system" class="step slide" data-x="8000" data-y="-1500">
            <?php include 'slide10.php';?>
-        </div>
+        </div> -->
 
 <!--    <div class="step slide" data-x="2000" data-y="-1500">
             <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>

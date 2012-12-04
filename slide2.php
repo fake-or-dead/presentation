@@ -38,9 +38,7 @@
         <div class="pbd_panel pbd_one_desc_wrapper">
             <h1 class="pbd_topic_header">Sticky bar</h1>
             <div class="pbd_topic_content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
+                <em class='pbd_em'>Social Sign-in</em> Allow your users to register with your site using our easy-to-integrate social sign-in widgets.
             </div>
 
         </div>
