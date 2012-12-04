@@ -2,11 +2,11 @@
     <center>
         <div class="pbd_slide_wrapper pbd_slide1 trace">
             <style type="text/css">
-                .pbd_logox{margin: 160px 0px 0px 0px; /*height:120px;*/}
-                .pbd_wordx{font-size: .4em;
+                .pbd_logox{ margin: 160px 0 0 0; }
+                .pbd_wordx{ font-size: .4em;
                             line-height: 26px;
                             width: 800px;
-                            margin: 60px 0px 0px 0px;
+                            margin: 60px 0 0 0;
                             letter-spacing: .01px;}
             </style>
 

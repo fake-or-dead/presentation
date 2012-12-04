@@ -89,6 +89,7 @@
        }(document, /*debug*/ false));
     </script>
     <div id="pb-root"></div>
+        
     <div id="playbasis_bar">
         <ul class="pull-left">
             <li class="logo">
@@ -115,6 +116,7 @@
             </li>   
         </ul>
     </div>
+    
     <div id="footer">
         <div id="navbar" class="navbar">
             <div class="navbar-inner">
@@ -225,14 +227,9 @@
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>
         impress().init();
-        // $('#navbar').scrollspy();
         // $(window).load(function() {
         //     $('#playbasisTour').joyride({'postStepCallback': function(index, tip){ console.log(tip); }});
         // });
-
-        function login() {
-
-        }
     </script>
 </body>
 </html>
