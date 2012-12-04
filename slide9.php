@@ -55,6 +55,7 @@
 	        	<div class="pbd_topic_content">
 	        		&nbsp;&nbsp;&nbsp;&nbsp;We can provide our clients with a custom Facebook application that allows their users to<em class='pbd_em'> sign-in</em> with Facebook, <em class='pbd_em'>post</em> to their Timelines, <em class='pbd_em'>invite</em> Facebook friends, <em class='pbd_em'>send Facebook requests</em>, and receive <em class='pbd_em'>Facebook notifications</em>
 	        	</div>
+	        	<a href='' style='font-size:0.4em'>Friends Invite</a>
 	        </div>
 
 	        <img src="./img/img_socialized.png" id='pbd_right_panel_socialized_images' />
