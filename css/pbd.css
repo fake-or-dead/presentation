@@ -63,7 +63,8 @@ li.progressbar.active { visibility: visible; }
 #user { line-height: 33px; }
 #login, #logout, #user { display: none; }
 #login.active, #logout.active, #user.active { display: block; }
-#footer {position:fixed; bottom: 0px; background-color: red; height: 30px; width:100%;}
+#footer { position:fixed; bottom: 0px; height: 30px; width:100%; }
+#footer .center { width:720px; margin: 0 auto; }
 
 
 /*

@@ -131,18 +131,20 @@
     <div id="footer">
         <div id="navbar" class="navbar" style="margin:0 auto;">
             <div class="navbar-inner">
-                <ul class="nav" style='margin-bottom: 130px;'>
-                    <li class="active"><a href="#playbasis"></a></li>
-                    <li><a href="#sticky-bar"></a></li>
-                    <li><a href="#basic-action"></a></li>
-                    <li><a href="#eccommerce-action"></a></li>
-                    <li><a href="#content-action"></a></li>
-                    <li><a href="#reward-system"></a></li>
-                    <li><a href="#stream"></a></li>
-                    <li><a href="#leader-board"></a></li>
-                    <li><a href="#dashboard"></a></li>
-                    <li><a href="#backend-system"></a></li>
-                </ul>
+                <div class="center">
+                    <ul class="nav" style='margin-bottom: 130px;'>
+                        <li class="active"><a href="#playbasis"></a></li>
+                        <li><a href="#sticky-bar"></a></li>
+                        <li><a href="#basic-action"></a></li>
+                        <li><a href="#eccommerce-action"></a></li>
+                        <li><a href="#content-action"></a></li>
+                        <li><a href="#reward-system"></a></li>
+                        <li><a href="#stream"></a></li>
+                        <li><a href="#leader-board"></a></li>
+                        <li><a href="#dashboard"></a></li>
+                        <li><a href="#backend-system"></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
