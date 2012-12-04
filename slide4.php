@@ -63,7 +63,7 @@
 
                     <li>
                         <h4>Check-ins </h4>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;GEncourage your users to return to your website more often by allowing them to get credit for broadcasting their activity and rewarding their loyalty.</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Encourage your users to return to your website more often by allowing them to get credit for broadcasting their activity and rewarding their loyalty.</p>
                     </li>
                     
                     <li>

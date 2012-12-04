@@ -52,10 +52,8 @@
 			<div class="pbd_right_panel pbd_panel " id='pbd_right_panel_socialized'>
 	        	
 	        	<h1 class="pbd_topic_header">Socialized,Friends</h1>
-	        	<div class="pbd_topic_content red hide">
-	        		Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-	        		 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-	        		  Ut enim ad minim veniam, quis nostrud exercitation
+	        	<div class="pbd_topic_content">
+	        		&nbsp;&nbsp;&nbsp;&nbsp;We can provide our clients with a custom Facebook application that allows their users to<em class='pbd_em'> sign-in</em> with Facebook, <em class='pbd_em'>post</em> to their Timelines, <em class='pbd_em'>invite</em> Facebook friends, <em class='pbd_em'>send Facebook requests</em>, and receive <em class='pbd_em'>Facebook notifications</em>
 	        	</div>
 	        </div>
 
