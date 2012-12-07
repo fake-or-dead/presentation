@@ -205,18 +205,18 @@ $(document).ready(function() {
         return false
     }
 
-    pb.blinkblink = function(elem, /* box-shadow config*/ config) {
-        if(!config) {
-            $(elem).css('box-shadow', 'rgb(0, 0, 0) 0px 0px 10px 0px');
-        }
-        else {
-            $(elem).css('box-shadow', config);
-        }
+    // pb.blinkblink = function(elem, /* box-shadow config*/ config) {
+    //     if(!config) {
+    //         $(elem).css('box-shadow', 'rgb(0, 0, 0) 0px 0px 10px 0px');
+    //     }
+    //     else {
+    //         $(elem).css('box-shadow', config);
+    //     }
         
-        setInterval(function() {
-            $(elem).stop().animate({boxShadow: '0 0 30px #44f'}).animate({boxShadow: '0 0 10px #000'}) 
-        }, 2000);
-    }
+    //     setInterval(function() {
+    //         $(elem).stop().animate({boxShadow: '0 0 30px #44f'}).animate({boxShadow: '0 0 10px #000'}) 
+    //     }, 2000);
+    // }
 
 
 // Slide 3 Content Integration 
@@ -253,12 +253,12 @@ $('#pbd_context_buy .context_button').on('click', function() {
 });
 
 // blink blink zone
-pb.blinkblink('#pbd_context_visit > .pbd_action_text');
-pb.blinkblink('#context_like_btn');
-pb.blinkblink('#context_share_btn');
-pb.blinkblink('#pbd_context_checkin_btn');
-pb.blinkblink('.pbd_context_want_btn');
-pb.blinkblink('.pbd_context_buy_btn');
+// pb.blinkblink('#pbd_context_visit > .pbd_action_text');
+// pb.blinkblink('#context_like_btn');
+// pb.blinkblink('#context_share_btn');
+// pb.blinkblink('#pbd_context_checkin_btn');
+// pb.blinkblink('.pbd_context_want_btn');
+// pb.blinkblink('.pbd_context_buy_btn');
 
 });
 

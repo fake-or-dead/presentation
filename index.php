@@ -12,14 +12,16 @@
     <link rel="stylesheet" type="text/css" href="css/impress-demo.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/dialog.css" />
-    <link rel="stylesheet" type="text/css" href="css/pbd.css" />
-    <link rel="stylesheet" type="text/css" href="css/pbd_common.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/pbd.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/pbd_common.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/pbd_component.css" />
     <link rel="stylesheet" type="text/css" href="css/tools_generated_css.css" />
     <link rel="stylesheet" type="text/css" href="css/text.css" />
     <link rel="stylesheet" type="text/css" href="css/zulazman.css" />
     <link rel="stylesheet" type="text/css" href="css/nav.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+
+    <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
 
     <link rel="shortcut icon" href="favicon.png" />
 </head>
@@ -222,7 +224,6 @@
     <script type="text/javascript" src='js/impress.js'></script>
     <script type="text/javascript" src='js/bootstrap.js'></script>
     <script type="text/javascript" src="js/modernizr.mq.js"></script>
-    <script type="text/javascript" src="js/basic_operation.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <!-- <script type="text/javascript" src="js/jquery.joyride-2.0.2.js"></script>     -->
     <script>

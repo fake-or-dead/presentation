@@ -33,10 +33,10 @@
 /*decor*/
 
 	.pbd_sample_context{ /*add shadow*/
-		margin: 2px
+		margin: 2px;
 		-webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.62);
-		-moz-box-shadow:    0px 0px 12px rgba(50, 50, 50, 0.62);
-		box-shadow:         0px 0px 12px rgba(50, 50, 50, 0.62);
+		   -moz-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.62);
+				box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.62);
 	}
 
 	.pbd_sample_context img{border: 1px solid #ddd;}
@@ -61,8 +61,8 @@ li.progressbar { visibility: hidden; }
 li.progressbar.active { visibility: visible; }
 
 #user { line-height: 33px; }
-#login, #logout, #user { display: none; }
-#login.active, #logout.active, #user.active { display: block; }
+#playbasis_bar #login, #playbasis_bar #logout,#playbasis_bar #user { display: none; }
+#playbasis_bar #login.active, #playbasis_bar #logout.active, #playbasis_bar #user.active { display: block; }
 #footer { position:fixed; bottom: 0px; height: 30px; width:100%; }
 #footer .center { width:720px; margin: 0 auto; }
 

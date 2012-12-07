@@ -1,0 +1,392 @@
+@-webkit-keyframes shadowblink {
+  /* line 6, ../sass/style.scss */
+  0% {
+    -webkit-box-shadow: 0 0 2px black;
+    -moz-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+  }
+
+  /* line 7, ../sass/style.scss */
+  50% {
+    -webkit-box-shadow: 0 0 25px yellow;
+    -moz-box-shadow: 0 0 25px yellow;
+    box-shadow: 0 0 25px yellow;
+  }
+}
+
+@-moz-keyframes shadowblink {
+  /* line 6, ../sass/style.scss */
+  0% {
+    -webkit-box-shadow: 0 0 2px black;
+    -moz-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+  }
+
+  /* line 7, ../sass/style.scss */
+  50% {
+    -webkit-box-shadow: 0 0 25px yellow;
+    -moz-box-shadow: 0 0 25px yellow;
+    box-shadow: 0 0 25px yellow;
+  }
+}
+
+@keyframes shadowblink {
+  /* line 6, ../sass/style.scss */
+  0% {
+    -webkit-box-shadow: 0 0 2px black;
+    -moz-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+  }
+
+  /* line 7, ../sass/style.scss */
+  50% {
+    -webkit-box-shadow: 0 0 25px yellow;
+    -moz-box-shadow: 0 0 25px yellow;
+    box-shadow: 0 0 25px yellow;
+  }
+}
+
+/* line 10, ../sass/style.scss */
+#pbd_context_visit > .pbd_action_text, #context_like_btn, #context_share_btn, #pbd_context_checkin_btn, .pbd_context_want_btn, .pbd_context_buy_btn {
+  -webkit-animation: shadowblink 2s infinite;
+  -moz-animation: shadowblink 2s infinite;
+  -ms-animation: shadowblink 2s infinite;
+  -o-animation: shadowblink 2s infinite;
+  animation: shadowblink 2s infinite;
+}
+
+/*pbd.css*/
+/*sturcture*/
+/* line 17, ../sass/style.scss */
+.pbd_quote {
+  font-size: .6em;
+  font-weight: lighter;
+}
+
+/* line 21, ../sass/style.scss */
+.pbd_slide_wrapper {
+  height: 100%;
+}
+
+/* line 24, ../sass/style.scss */
+.pbd_panel {
+  width: 48%;
+  float: left;
+  margin-left: 12px;
+}
+
+/* line 29, ../sass/style.scss */
+.pbd_topic_header {
+  font-size: .9em;
+  margin-top: 40px;
+}
+
+/* line 33, ../sass/style.scss */
+.pbd_topic_content {
+  font-size: .5em;
+  line-height: 24px;
+  margin-top: -20px;
+}
+
+/*SLIDE_5 ECOMMERCE INTEGRATION*/
+/* line 40, ../sass/style.scss */
+.pbd_cover_panel .pbd_panel {
+  margin-top: 40px;
+}
+/* line 42, ../sass/style.scss */
+.pbd_cover_panel .pbd_panel .pbd_topic_header {
+  margin-top: 0;
+}
+
+/*SLIDE_6 REWARD SYSTEM*/
+/* line 47, ../sass/style.scss */
+.pbd_col_panel {
+  width: 32%;
+  float: left;
+  margin: 0 0 0 8px;
+}
+
+/* line 52, ../sass/style.scss */
+.pbd_context_col {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+/* line 57, ../sass/style.scss */
+.pbd_context_col_desc {
+  margin-top: 20px;
+  padding: 0 6px 0 12px;
+  font-size: .6em;
+  line-height: 24px;
+}
+
+/* line 63, ../sass/style.scss */
+ul.pbd_sample_context_list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+/* line 67, ../sass/style.scss */
+ul.pbd_sample_context_list li {
+  margin: 12px 0 0 0;
+  overflow: hidden;
+}
+
+/* line 71, ../sass/style.scss */
+.pbd_sample_context {
+  width: 300px;
+  height: 180px;
+}
+
+/* line 75, ../sass/style.scss */
+.pbd_context_content {
+  width: 100%;
+  height: 100%;
+  /*background:#62F57F;*/
+}
+
+/* line 80, ../sass/style.scss */
+.context_button {
+  font-weight: bold;
+  padding: 4px 14px;
+  float: right;
+  margin: -40px 8px 0 12px;
+  cursor: pointer;
+}
+
+/* line 87, ../sass/style.scss */
+.pbd_cover_panel {
+  width: 100%;
+  height: 49%;
+  margin: 2px 0;
+}
+
+/*decor*/
+/* line 94, ../sass/style.scss */
+.pbd_sample_context {
+  margin: 2px;
+  -webkit-box-shadow: 0 0 12px rgba(50, 50, 50, 0.62);
+  -moz-box-shadow: 0 0 12px rgba(50, 50, 50, 0.62);
+  box-shadow: 0 0 12px rgba(50, 50, 50, 0.62);
+}
+/* line 97, ../sass/style.scss */
+.pbd_sample_context img {
+  border: 1px solid #ddd;
+}
+
+/*FIXED	*/
+/* line 102, ../sass/style.scss */
+.pbd_slide1 {
+  margin: -180px;
+}
+/* line 104, ../sass/style.scss */
+.pbd_slide1 .hello {
+  margin-top: -20px;
+}
+
+/* line 108, ../sass/style.scss */
+#playbasis_bar span {
+  padding: 5px 5px;
+  color: white;
+}
+/* line 111, ../sass/style.scss */
+#playbasis_bar li {
+  float: left;
+  display: inline;
+}
+/* line 114, ../sass/style.scss */
+#playbasis_bar .pull-left {
+  width: 425px;
+}
+
+/* line 117, ../sass/style.scss */
+li.progressbar {
+  display: inline;
+  float: right;
+  line-height: 33px;
+  visibility: hidden;
+}
+/* line 121, ../sass/style.scss */
+li.progressbar .progress {
+  width: 200px;
+  height: 8px;
+  margin-top: 13px;
+  float: left;
+}
+/* line 126, ../sass/style.scss */
+li.progressbar .level {
+  display: inline;
+  height: 35px;
+  float: left;
+}
+/* line 130, ../sass/style.scss */
+li.progressbar .level span {
+  padding: 5px 5px;
+}
+/* line 133, ../sass/style.scss */
+li.progressbar.active {
+  visibility: visible;
+}
+
+/* line 136, ../sass/style.scss */
+#user {
+  line-height: 33px;
+}
+
+/* line 139, ../sass/style.scss */
+#playbasis_bar {
+  width: 100%;
+  height: 35px;
+  background-color: black;
+}
+/* line 143, ../sass/style.scss */
+#playbasis_bar #login, #playbasis_bar #logout, #playbasis_bar #user {
+  display: none;
+}
+/* line 145, ../sass/style.scss */
+#playbasis_bar #login.active, #playbasis_bar #logout.active, #playbasis_bar #user.active {
+  display: block;
+}
+
+/* line 148, ../sass/style.scss */
+#footer {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+}
+/* line 153, ../sass/style.scss */
+#footer .center {
+  width: 720px;
+  margin: 0 auto;
+}
+
+/*
+    customize css by playbasis
+*/
+/* line 161, ../sass/style.scss */
+.fallback-message {
+  display: none;
+}
+
+/*#playbasis_bar #user img { 
+	width: 25px;
+	height: 25px;
+}*/
+/* line 169, ../sass/style.scss */
+#logo {
+  width: 114px;
+  height: 35px;
+  background-image: url("../img/logo-playbasis.png");
+  background-size: 114px 35px;
+  display: inline-block;
+}
+
+/*4.12.2012*/
+/* line 178, ../sass/style.scss */
+.pbd_topic_content_ulx {
+  list-style-type: none;
+  padding-left: 24px;
+}
+/* line 181, ../sass/style.scss */
+.pbd_topic_content_ulx li {
+  margin-top: 32px;
+}
+/* line 183, ../sass/style.scss */
+.pbd_topic_content_ulx li h4 {
+  text-decoration: underline;
+}
+/* line 185, ../sass/style.scss */
+.pbd_topic_content_ulx li p {
+  margin-top: -16px;
+  margin-left: 12px;
+}
+
+/* line 189, ../sass/style.scss */
+.pbd_context_col_desc {
+  font-size: .5em;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+/* line 194, ../sass/style.scss */
+.trace {
+  /*outline:1px solid red;*/
+}
+/* line 196, ../sass/style.scss */
+.trace * {
+  /*outline:1px solid red;*/
+}
+
+/* line 199, ../sass/style.scss */
+.red {
+  color: red;
+}
+
+/* line 202, ../sass/style.scss */
+.pbd_em {
+  color: #14a3db;
+  text-decoration: none;
+}
+
+/* line 206, ../sass/style.scss */
+.hide {
+  display: none;
+}
+
+/* line 209, ../sass/style.scss */
+.line {
+  border: 1px solid #cccccc;
+}
+
+/* line 212, ../sass/style.scss */
+.round {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 215, ../sass/style.scss */
+.mini-round {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 218, ../sass/style.scss */
+.round-top {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* line 222, ../sass/style.scss */
+.round-bottom {
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* line 225, ../sass/style.scss */
+.shadow {
+  -webkit-box-shadow: 0 0 12px rgba(50, 50, 50, 0.62);
+  -moz-box-shadow: 0 0 12px rgba(50, 50, 50, 0.62);
+  box-shadow: 0 0 12px rgba(50, 50, 50, 0.62);
+}
+
+/* line 228, ../sass/style.scss */
+.clear {
+  clear: both;
+}
